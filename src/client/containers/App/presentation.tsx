@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Footer } from 'ui';
+import { Footer, Header, Box, Heading } from 'ui';
 import { SetIsMobileAction } from './actions';
 import { State } from './state';
 import { Main } from './styles';
@@ -37,6 +37,21 @@ export default class App extends React.Component<Props, undefined> {
     } = this.props;
     return (
       <Main>
+        <Header>
+          <Box
+            style={{ width: '100%' }}
+            flexDirection="row"
+            alignItems="center"
+            justifyContent="space-between"
+          >
+            <Heading margin="none" tag="h2">
+              Agency
+            </Heading>
+            <button>
+              Burger
+            </button>
+          </Box>
+        </Header>
         {children}
         <Footer>
           Footer

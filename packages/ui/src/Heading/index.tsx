@@ -15,7 +15,7 @@ export interface Props {
 
 class Heading extends React.Component<Props, undefined> {
   public static defaultProps: Props = {
-    color: '#007acc',
+    color: '#666',
     textAlign: 'center',
     tag: 'h1',
     truncate: false,
