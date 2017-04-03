@@ -2,6 +2,7 @@ type State = 'Pinned' | 'Unpinned';
 export interface HeaderState {
   state: State;
   position: number;
+  height: number;
 }
 
 export type GetHeaderState = (
@@ -30,6 +31,7 @@ const getHeaderState: GetHeaderState = (
     return {
       state: nextState,
       position: currentPosition,
+      height: header.clientHeight,
     };
   }
   return currentState;

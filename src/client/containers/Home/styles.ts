@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export default styled.div`
   padding: 60px;
   flex: 1;
-  margin-top: 90px;
-  background-color: #f5f5f5;
+  min-height: 400vh;
+  padding-top: 90px;
+  background-color: black;
 `;

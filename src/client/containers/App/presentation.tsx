@@ -50,8 +50,8 @@ export default class App extends React.Component<Props, undefined> {
             alignItems="center"
             justifyContent="space-between"
           >
-            <Heading margin="none" tag="h2">
-              Agency
+            <Heading margin="none" tag="h3" upcase>
+              Agency Name
             </Heading>
             <Burger onClick={actions.toggleMenu} />
           </Box>

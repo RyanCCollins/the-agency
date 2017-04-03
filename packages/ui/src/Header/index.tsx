@@ -18,6 +18,7 @@ export default class Header extends React.Component<Props, State> {
       headerState: {
         state: 'Pinned',
         position: 0,
+        height: 0,
       },
     };
   }
@@ -46,6 +47,7 @@ export default class Header extends React.Component<Props, State> {
     return (
       <HeaderComponent
         {...rest}
+        height={this.state.headerState.height}
         state={this.state.headerState.state}
       >
         {children}

@@ -1,17 +1,18 @@
 import { css } from 'styled-components';
 import { HeaderComponentProps, Props } from './types';
 
-function translateStyle({ state }: HeaderComponentProps) {
-  const translate = state === 'Pinned' ? 0 : -88;
+function translateStyle({ state, height }: HeaderComponentProps) {
+  const translate = state === 'Pinned' ? 0 : -height;
   return css`
     transform: translate3d(0px, ${translate}px, 0px);
   `;
 }
 
+type OwnProps = Props & HeaderComponentProps;
 export default function headerStyles() {
   return css`
-    ${(props: Props) => translateStyle(props)}
-    padding: 30px;
+    ${(props: OwnProps) => translateStyle(props)}
+    padding: 20px;
     position: fixed;
     top: 0;
     right: 0;
@@ -19,6 +20,6 @@ export default function headerStyles() {
     z-index: 8;
     width: 100%;
     transition: opacity 400ms ease, transform 400ms ease, background-color 600ms ease
-    background-color: ${(props: Props) => props.backgroundColor || 'rgba(245,245,245,.95)'};
+    background-color: ${(props: OwnProps) => props.backgroundColor || 'rgba(245,245,245,.95)'};
   `;
 }

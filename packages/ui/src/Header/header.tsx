@@ -5,6 +5,7 @@ import headerStyles from './styles';
 export interface Props {
   backgroundColor?: string;
   state?: string;
+  height: number;
 }
 
 const HeaderComponent = styled.header`
