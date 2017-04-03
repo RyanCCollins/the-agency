@@ -1,5 +1,6 @@
 import * as types from './constants';
 import { defaultAction } from 'shared/actionCreators';
+import { toggleMenu } from '../NavigationMenu/actionCreators';
 import {
   SetIsMobileAction,
 } from './actions';
@@ -12,6 +13,7 @@ export const setIsMobile = (isMobile: boolean): SetIsMobileAction => ({
 export const actionCreators = {
   setIsMobile,
   defaultAction,
+  toggleMenu,
 };
 
 export default actionCreators;

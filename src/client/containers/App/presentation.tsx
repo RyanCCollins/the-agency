@@ -1,14 +1,18 @@
 import * as React from 'react';
 import { Footer, Header, Box, Heading } from 'ui';
+import { NavigationMenu } from 'containers';
+import { Burger } from 'components';
 import { SetIsMobileAction } from './actions';
 import { State } from './state';
 import { Main } from './styles';
+import { ToggleMenuAction } from '../NavigationMenu/types';
 
 export type StateProps = State;
 
 export interface DispatchProps {
   actions: {
     setIsMobile: (isMobile: boolean) => SetIsMobileAction,
+    toggleMenu: () => ToggleMenuAction;
   };
 };
 
@@ -34,9 +38,11 @@ export default class App extends React.Component<Props, undefined> {
   public render() {
     const {
       children,
+      actions,
     } = this.props;
     return (
       <Main>
+        <NavigationMenu />
         <Header>
           <Box
             style={{ width: '100%' }}
@@ -47,9 +53,7 @@ export default class App extends React.Component<Props, undefined> {
             <Heading margin="none" tag="h2">
               Agency
             </Heading>
-            <button>
-              Burger
-            </button>
+            <Burger onClick={actions.toggleMenu} />
           </Box>
         </Header>
         {children}

@@ -1,5 +1,6 @@
 import { Action } from 'redux';
 /* GENERATOR-IMPORT */
+import * as NavigationMenuTypes from './containers/NavigationMenu/types';
 import * as HomeTypes from './containers/Home/types';
 import * as AppTypes from 'containers/App/types';
 export { ThemeColorMap } from './theming/types';
@@ -15,6 +16,7 @@ export interface FormControlEventTarget extends EventTarget {
 
 export {
   /* GENERATOR-EXPORT */
+  NavigationMenuTypes,
   HomeTypes,
   AppTypes,
 };
