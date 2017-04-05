@@ -73,7 +73,7 @@ export default class Presentation extends React.Component<StateProps, State> {
                     We build scalable solutions for the web and mobile platforms
                   </Headline>
                   <Button
-                    borderColor="#fff"
+                    borderColor="white"
                     backgroundColor="transparent"
                     onClick={(e) => e}
                     label="See Case Studies"
