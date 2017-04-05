@@ -2,15 +2,11 @@ import styled, { css } from 'styled-components';
 import { StateProps } from './types';
 
 function navStyles({ isVisible }: StateProps) {
-  if (isVisible) {
-    return css`
-      visibility: visible;
-      opacity: 1;
-    `;
-  }
+  const visibility = isVisible ? 'visibile' : 'hidden';
+  const opacity = isVisible ? 1.0 : 0.0;
   return css`
-    visibility: hidden;
-    opacity: 0;
+    visibility: ${visibility};
+    opacity: ${opacity};
   `;
 }
 
@@ -25,6 +21,7 @@ export default styled.nav`
   cursor: pointer;
   right: 0;
   top: 0;
+  will-change: opacity, visibility;
   transition: opacity 200ms cubic-bezier(.55,.055,.675,.19),visibility 200ms cubic-bezier(.55,.055,.675,.19);
   z-index: 1000;
 `;
