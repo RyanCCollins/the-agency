@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { findDOMNode } from 'react-dom';
-import { Hero, Headline, Image, Box, WithAnimation } from 'ui';
+import { Hero, Headline, Image, Box, WithAnimation, Button } from 'ui';
 import { StateProps } from './types';
 import Wrapper from './styles';
 
@@ -57,7 +57,7 @@ export default class Presentation extends React.Component<StateProps, State> {
               <Box style={{ maxWidth: 576 }} justifyContent="center">
                 <WithAnimation type="fadeInUp" isVisible={this.state.section1}>
                   <Headline color="white">
-                    We are a dedicated digital agency, specializing in building a scalable Web
+                    We are a dedicated digital agency
                   </Headline>
                 </WithAnimation>
               </Box>
@@ -70,8 +70,14 @@ export default class Presentation extends React.Component<StateProps, State> {
               <Box style={{ maxWidth: 576 }} justifyContent="center">
                 <WithAnimation type="fadeInUp" isVisible={this.state.section2}>
                   <Headline color="white">
-                    Something else about us
+                    We build scalable solutions for the web and mobile platforms
                   </Headline>
+                  <Button
+                    borderColor="#fff"
+                    backgroundColor="transparent"
+                    onClick={(e) => e}
+                    label="See Case Studies"
+                  />
                 </WithAnimation>
               </Box>
             </Box>

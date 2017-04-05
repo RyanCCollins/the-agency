@@ -9,6 +9,7 @@ export interface Props extends React.HTMLProps<HTMLButtonElement & Button> {
   fontSize?: Size;
   isHero?: boolean;
   borderColor?: string;
+  label?: string;
 }
 
 class Button extends React.Component<Props, undefined> {
@@ -30,7 +31,7 @@ class Button extends React.Component<Props, undefined> {
           backgroundColor={this.props.backgroundColor}
           fontSize={this.props.fontSize}
         >
-          {this.props.children}
+          {this.props.children || this.props.label}
         </HeroButton>
       );
     }
@@ -41,7 +42,7 @@ class Button extends React.Component<Props, undefined> {
         backgroundColor={this.props.backgroundColor}
         fontSize={this.props.fontSize}
       >
-        {this.props.children}
+        {this.props.children || this.props.label}
       </ButtonComponent>
     );
   }

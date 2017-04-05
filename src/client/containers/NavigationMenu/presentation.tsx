@@ -1,38 +1,47 @@
 import * as React from 'react';
 import { Props } from './types';
-import { Box } from 'ui';
+import { Box, WithAnimation, Heading } from 'ui';
 import Nav from './nav';
 import Li from './li';
 import Ul from './ul';
-import Heading from './heading';
 
-export default class Presentation extends React.Component<Props, undefined> {
-  public render() {
-    return (
-      <Nav {...this.props} onClick={this.props.actions.toggleMenu}>
-        <Box pad="large" flexDirection="row" justifyContent="space-between">
-          <Box>
-            <Heading {...this.props} color="white" upcase>The Agency</Heading>
-          </Box>
-          <Ul>
-            <Li>
-              <Heading {...this.props} textAlign="right" tag="h2" color="white">
+export default function Presentation({
+  actions,
+  isVisible,
+  ...props,
+}: Props) {
+  return (
+    <Nav {...props} isVisible={isVisible} onClick={actions.toggleMenu}>
+      <Box pad="large" flexDirection="row" justifyContent="space-between">
+        <Box>
+          <WithAnimation type="fadeInUp" isVisible={isVisible}>
+            <Heading color="white" upcase>The Agency</Heading>
+          </WithAnimation>
+        </Box>
+        <Ul>
+          <Li>
+            <WithAnimation type="fadeInUp" isVisible={isVisible}>
+              <Heading textAlign="right" tag="h2" color="white">
                 Case Studies
               </Heading>
-            </Li>
-            <Li>
-              <Heading {...this.props} textAlign="right" tag="h2" color="white">
+            </WithAnimation>
+          </Li>
+          <Li>
+            <WithAnimation type="fadeInUp" isVisible={isVisible}>
+              <Heading textAlign="right" tag="h2" color="white">
                 Clients
               </Heading>
-            </Li>
-            <Li>
-              <Heading {...this.props} textAlign="right" tag="h2" color="white">
+            </WithAnimation>
+          </Li>
+          <Li>
+            <WithAnimation type="fadeInUp" isVisible={isVisible}>
+              <Heading textAlign="right" tag="h2" color="white">
                 About
               </Heading>
-            </Li>
-          </Ul>
-        </Box>
-      </Nav>
-    );
-  }
+            </WithAnimation>
+          </Li>
+        </Ul>
+      </Box>
+    </Nav>
+  );
 }

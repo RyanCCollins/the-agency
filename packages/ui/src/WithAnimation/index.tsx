@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { ThemedCssFunction } from 'styled-components';
 import Animation from './animation';
 import { AnimationType } from './types';
 
@@ -7,13 +8,16 @@ export interface Props {
   isVisible: boolean;
   children?: JSX.Element;
   duration?: number;
+  delay?: number;
+  css?: ThemedCssFunction<{}>;
 }
 
 type HOC = (props: Props) => JSX.Element;
 const WithAnimation: HOC = ({
-  duration = 500,
+  duration = 1000,
   type = 'fadeIn',
   children,
+  delay = 0,
   ...props,
 }) => (
   <Animation type={type} duration={duration} {...props}>
