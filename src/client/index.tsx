@@ -20,8 +20,8 @@ render(
 );
 
 if (module.hot) {
-  const NextApp = require('./routes').default;
   module.hot.accept('./routes', () => {
+    const NextApp = require('./routes').default;
     render(
       <AppContainer>
         <NextApp />

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Footer, Header, Box, Heading } from 'ui';
+import { Header, Box, Heading } from 'ui';
 import { NavigationMenu } from 'containers';
 import { Burger } from 'components';
 import { SetIsMobileAction } from './actions';
@@ -51,15 +51,12 @@ export default class App extends React.Component<Props, undefined> {
             justifyContent="space-between"
           >
             <Heading margin="none" tag="h3" upcase>
-              Agency Name
+              The Agency
             </Heading>
             <Burger onClick={actions.toggleMenu} />
           </Box>
         </Header>
         {children}
-        <Footer>
-          Footer
-        </Footer>
       </Main>
     );
   }

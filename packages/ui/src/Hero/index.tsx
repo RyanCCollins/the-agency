@@ -3,14 +3,16 @@ import Component from './styles';
 
 export interface Props extends React.Props<typeof Hero> {
   backgroundColor?: string;
+  full?: boolean;
 }
 export default function Hero({
   children,
   backgroundColor,
+  full = false,
 }: Props): JSX.Element {
   const colorProp = backgroundColor || '#2d2d2d';
   return (
-    <Component backgroundColor={colorProp}>
+    <Component full={full} backgroundColor={colorProp}>
       {children}
     </Component>
   );
