@@ -16,6 +16,7 @@ import Paragraph from './Paragraph';
 import Section from './Section';
 import SvgIcon from './SvgIcon';
 import Toast from './Toast';
+import WithAnimation from './WithAnimation';
 
 export {
   Anchor,
@@ -36,4 +37,5 @@ export {
   Section,
   SvgIcon,
   Toast,
+  WithAnimation,
 };
