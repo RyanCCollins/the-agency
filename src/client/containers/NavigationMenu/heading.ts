@@ -3,12 +3,8 @@ import { StateProps } from './types';
 import { Heading } from 'ui';
 
 function styles({ isVisible }: StateProps) {
-  const opacity = isVisible
-    ? 1.0
-    : 0.0;
-  const translate = isVisible
-    ? 0
-    : 100;
+  const opacity = isVisible ? 1.0 : 0.0;
+  const translate = isVisible ? 0 : 100;
   return css`
     transform: translateY(${translate}%);
     opacity: ${opacity};
