@@ -22,6 +22,7 @@ export default styled.nav`
   overflow-x: hidden;
   overflow-y: scroll;
   position: fixed;
+  cursor: pointer;
   right: 0;
   top: 0;
   transition: opacity 200ms cubic-bezier(.55,.055,.675,.19),visibility 200ms cubic-bezier(.55,.055,.675,.19);

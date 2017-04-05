@@ -11,7 +11,7 @@ export default class Presentation extends React.Component<Props, undefined> {
       <Nav {...this.props} onClick={this.props.actions.toggleMenu}>
         <Box pad="large" flexDirection="row" justifyContent="space-between">
           <Box>
-            <Heading color="white" upcase>Agency Name</Heading>
+            <Heading color="white" upcase>The Agency</Heading>
           </Box>
           <Ul>
             <Li>
