@@ -4,13 +4,13 @@ import client from './apolloClient';
 /* GENERATOR-IMPORT-REDUCER */
 import navigationMenu from './containers/NavigationMenu/reducer';
 import home from './containers/Home/reducer';
-import appReducer from 'containers/App/reducer';
+import layoutReducer from 'containers/Layout/reducer';
 
 export const rootReducer = combineReducers({
   /* GENERATOR-EXPORT-REDUCER */
   navigationMenu,
   home,
-  app: appReducer,
+  layout: layoutReducer,
   routing: routerReducer,
   apollo: client.reducer() as Reducer<undefined>,
 });

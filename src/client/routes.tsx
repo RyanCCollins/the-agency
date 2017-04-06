@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { Route, IndexRoute, Router as ReactRouter } from 'react-router';
 import client from './apolloClient';
 import store, { history } from './store';
-import { App, Home } from './containers';
+import { Layout, Home } from './containers';
 import colors from './theming';
 
 import ReactGA from 'react-ga';
@@ -22,7 +22,7 @@ const logPage = () => {
 };
 
 export const routes = (
-  <Route path="/" component={App}>
+  <Route path="/" component={Layout}>
     <IndexRoute component={Home} />
     <Route path="*" component={Home} />
   </Route>

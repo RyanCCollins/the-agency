@@ -2,7 +2,7 @@ import { Action } from 'redux';
 /* GENERATOR-IMPORT */
 import * as NavigationMenuTypes from './containers/NavigationMenu/types';
 import * as HomeTypes from './containers/Home/types';
-import * as AppTypes from 'containers/App/types';
+import * as LayoutTypes from 'containers/Layout/types';
 export { ThemeColorMap } from './theming/types';
 
 export interface PayloadAction<P> extends Action {
@@ -18,5 +18,5 @@ export {
   /* GENERATOR-EXPORT */
   NavigationMenuTypes,
   HomeTypes,
-  AppTypes,
+  LayoutTypes,
 };
