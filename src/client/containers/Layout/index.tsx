@@ -46,9 +46,7 @@ class Layout extends React.Component<Props, undefined> {
   }
   public render() {
     return (
-      <Presentation {...this.props}>
-        {this.props.children}
-      </Presentation>
+      <Presentation {...this.props} />
     );
   }
 }
