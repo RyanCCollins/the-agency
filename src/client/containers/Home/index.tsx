@@ -22,6 +22,11 @@ const mapDispatchToProps: MapDispatchToProps = (dispatch) => ({
   ),
 });
 
+interface State {
+  section1: boolean;
+  section2: boolean;
+}
+
 export interface DispatchProps {
   actions: ActionMap;
 }
@@ -34,10 +39,42 @@ export interface StateProps {
 
 export type Props = StateProps & DispatchProps;
 
-class Home extends React.Component<Props, undefined> {
+class Home extends React.Component<Props, State> {
+  constructor() {
+    super();
+    this.handleScroll = this.handleScroll.bind(this);
+    this.state = {
+      section1: false,
+      section2: false,
+    };
+  }
+  public componentDidMount() {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', this.handleScroll);
+    }
+  }
+  public componentWillUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
+  }
+  private handleScroll() {
+    const windowHeight = window ? window.innerHeight : 1000;
+    const section1Node = document.getElementById('section-one');
+    const section2Node = document.getElementById('section-two');
+    const section1 = section1Node.getBoundingClientRect().top < windowHeight / 2;
+    const section2 = section2Node.getBoundingClientRect().top < windowHeight / 2;
+    this.setState({
+      section1,
+      section2,
+    });
+  }
   public render() {
     return (
-      <Presentation {...this.props} />
+      <Presentation
+        {...this.state}
+        {...this.props}
+      />
     );
   }
 }
