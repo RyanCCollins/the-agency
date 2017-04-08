@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Props } from './types';
 import { Box, WithAnimation, Heading } from 'ui';
+import { Props } from './types';
 import Nav from './nav';
 import Li from './li';
 import Ul from './ul';

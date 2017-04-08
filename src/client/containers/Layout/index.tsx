@@ -12,7 +12,7 @@ import { State as StateProps } from './state';
 
 export interface DispatchProps {
   actions: {
-    setIsMobile: (isMobile: boolean) => SetIsMobileAction,
+    setIsMobile: (isMobile: boolean) => SetIsMobileAction;
     toggleMenu: () => ToggleMenuAction;
   };
 };
