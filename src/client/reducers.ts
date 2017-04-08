@@ -2,12 +2,14 @@ import { combineReducers, Reducer } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import client from './apolloClient';
 /* GENERATOR-IMPORT-REDUCER */
+import portfolio from './containers/Portfolio/reducer';
 import navigationMenu from './containers/NavigationMenu/reducer';
 import home from './containers/Home/reducer';
 import layoutReducer from 'containers/Layout/reducer';
 
 export const rootReducer = combineReducers({
   /* GENERATOR-EXPORT-REDUCER */
+  portfolio,
   navigationMenu,
   home,
   layout: layoutReducer,

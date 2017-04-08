@@ -20,7 +20,7 @@ const WithAnimation: HOC = ({
   delay = 0,
   ...props,
 }) => (
-  <Animation type={type} duration={duration} {...props}>
+  <Animation delay={delay} type={type} duration={duration} {...props}>
     {children}
   </Animation>
 );

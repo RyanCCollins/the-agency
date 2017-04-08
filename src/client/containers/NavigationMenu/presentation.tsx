@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, WithAnimation, Heading } from 'ui';
+import { Box, WithAnimation, Heading, Anchor } from 'ui';
 import { Props } from './types';
 import Nav from './nav';
 import Li from './li';
@@ -21,9 +21,11 @@ export default function Presentation({
         <Ul>
           <Li>
             <WithAnimation type="fadeInUp" isVisible={isVisible}>
-              <Heading textAlign="right" tag="h2" color="white">
-                Case Studies
-              </Heading>
+              <Anchor path="/case-studies">
+                <Heading textAlign="right" tag="h2" color="white">
+                  Case Studies
+                </Heading>
+              </Anchor>
             </WithAnimation>
           </Li>
           <Li>

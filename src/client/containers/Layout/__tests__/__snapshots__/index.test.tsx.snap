@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout Container  should render with default props 1`] = `<Connect(Layout) />`;
+exports[`Layout Container  should render with default props 1`] = `<Connect(_class) />`;

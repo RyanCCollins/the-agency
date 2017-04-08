@@ -47,7 +47,7 @@ function stringBoxStyle(size: BoxSize): SizeStyle {
   if (size === 'full') {
     return {
       width: '100vw',
-      height: '100vh',
+      height: 'auto',
     };
   } else {
     return {

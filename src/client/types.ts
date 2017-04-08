@@ -1,5 +1,6 @@
 import { Action } from 'redux';
 /* GENERATOR-IMPORT */
+import * as PortfolioTypes from './containers/Portfolio/types';
 import * as NavigationMenuTypes from './containers/NavigationMenu/types';
 import * as HomeTypes from './containers/Home/types';
 import * as LayoutTypes from 'containers/Layout/types';
@@ -16,6 +17,7 @@ export interface FormControlEventTarget extends EventTarget {
 
 export {
   /* GENERATOR-EXPORT */
+  PortfolioTypes,
   NavigationMenuTypes,
   HomeTypes,
   LayoutTypes,

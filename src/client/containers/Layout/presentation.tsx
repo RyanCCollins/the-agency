@@ -13,7 +13,7 @@ export default function Presentation({
     <Main>
       <NavigationMenu />
       <Navigation brandText={brandText} onToggleMenu={actions.toggleMenu} />
-      {children}
+      {React.cloneElement(children)}
     </Main>
   );
 }

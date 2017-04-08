@@ -5,10 +5,12 @@ import { SetIsMobileAction } from './actions';
 import { State } from '../../state';
 import actionCreators from './actionCreators';
 import { ToggleMenuAction } from '../NavigationMenu/types';
+import { withTheme } from 'styled-components';
 import { selectIsMobile, selectBrand } from './selectors';
 import Presentation from './presentation';
 import { Action } from './actions';
 import { State as StateProps } from './state';
+import { ThemeColorMap } from '../../types';
 
 export interface DispatchProps {
   actions: {
@@ -29,7 +31,8 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>): DispatchProps => ({
   ),
 });
 
-export type Props = StateProps & DispatchProps & { children: JSX.Element };
+interface OwnProps { children: JSX.Element; theme: ThemeColorMap; }
+export type Props = StateProps & DispatchProps & OwnProps;
 
 class Layout extends React.Component<Props, undefined> {
   public componentDidMount() {
@@ -54,4 +57,4 @@ class Layout extends React.Component<Props, undefined> {
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Layout);
+)(withTheme(Layout));

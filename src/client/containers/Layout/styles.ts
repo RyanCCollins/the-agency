@@ -6,4 +6,5 @@ export const Main = styled.main`
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin-top: 100px;
 `;

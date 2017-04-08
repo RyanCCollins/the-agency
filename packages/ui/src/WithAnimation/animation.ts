@@ -29,7 +29,7 @@ function transition(props: Props) {
 
 function delay({ delay }: Props) {
   return css`
-    animation-delay: ${delay}ms;
+    transition-delay: ${delay}ms;
   `;
 }
 
