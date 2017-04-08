@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Box, Headline, Image, WithAnimation } from 'ui';
 import { Props } from './types';
+import Hr from './hr';
 
 function PortfolioItems({
   items,
@@ -39,7 +40,10 @@ export default class Presentation extends React.Component<Props, undefined> {
     } = this.props;
     return (
       <Box alignItems="center" boxSize="full" backgroundColor={theme.offwhite}>
-        <Headline>Case Studies</Headline>
+        <Box pad="large" alignItems="center">
+          <Headline color="#666" fontWeight={700}>Case Studies</Headline>
+          <Hr color="#666" />
+        </Box>
         <PortfolioItems isMounted={isMounted} items={items} />
       </Box>
     );
