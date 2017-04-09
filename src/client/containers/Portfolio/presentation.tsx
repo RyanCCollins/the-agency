@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Box, Headline, Image, WithAnimation } from 'ui';
 import { Props } from './types';
 import Hr from './hr';
+import Overlay from './overlay';
 
 function PortfolioItems({
   items,
@@ -24,7 +25,12 @@ function PortfolioItem({
 }) {
   return (
     <Box style={{ maxWidth: 600 }} pad="large">
-      <Image src={image} alt={title} />
+      <div style={{ position: 'relative' }}>
+        <Overlay>
+          <p>{title}</p>
+        </Overlay>
+        <Image src={image} alt={title} />
+      </div>
     </Box>
   );
 }
