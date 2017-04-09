@@ -3,10 +3,12 @@ import { StateProps } from './types';
 
 function navStyles({ isVisible }: StateProps) {
   const visibility = isVisible ? 'visibile' : 'hidden';
+  const overflow = isVisible ? 'hidden' : '';
   const opacity = isVisible ? 1.0 : 0.0;
   return css`
     visibility: ${visibility};
     opacity: ${opacity};
+    overflow: ${overflow};
   `;
 }
 
@@ -15,8 +17,6 @@ export default styled.nav`
   background-color: #121212;
   bottom: 0;
   left: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
   position: fixed;
   cursor: pointer;
   right: 0;

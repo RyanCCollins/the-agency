@@ -6,8 +6,7 @@ const globalCss = injectGlobal`
   }
 
   body {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
     padding: 0;
     margin: 0;
     font-family: Hind,sans-serif;

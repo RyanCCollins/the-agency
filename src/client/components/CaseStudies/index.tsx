@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, WithAnimation } from 'ui';
+import { Box } from 'ui';
 import { CaseStudy } from 'components';
 import { Project } from 'containers/Portfolio/types';
 
@@ -14,9 +14,7 @@ export default function CaseStudies({
   return (
     <Box flexDirection="column">
       {items.map((item, i) =>
-        <WithAnimation delay={(i + 1) * 100} type="fadeInUp" isVisible={isMounted}>
-          <CaseStudy {...item} />
-        </WithAnimation>,
+        <CaseStudy key={i} {...item} />,
       )}
     </Box>
   );

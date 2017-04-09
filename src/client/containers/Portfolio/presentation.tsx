@@ -10,7 +10,7 @@ export default function Presentation({
   data: { items },
 }: Props) {
   return (
-    <Box alignItems="center" boxSize="full" backgroundColor={theme.offwhite}>
+    <Box alignItems="center" backgroundColor={theme.offwhite}>
       <Box pad="large" alignItems="center">
         <Headline color="#666" fontWeight={700}>Case Studies</Headline>
         <Hr color="#666" />

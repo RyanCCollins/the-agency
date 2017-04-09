@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
-  max-width: 100vw;
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin-top: 100px;
+  margin-top: 0;
+  padding-top: 100px;
+  background-color: #f5f5f5;
 `;
