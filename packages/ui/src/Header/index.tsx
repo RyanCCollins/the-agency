@@ -14,6 +14,7 @@ export default class Header extends React.Component<Props, State> {
   public constructor() {
     super();
     this.handleScroll = this.handleScroll.bind(this);
+    this.backgroundColor = this.backgroundColor.bind(this);
     this.state = {
       headerState: {
         state: 'Pinned',
@@ -39,14 +40,26 @@ export default class Header extends React.Component<Props, State> {
       headerState: nextState,
     });
   }
+  private backgroundColor() {
+    const header = document.getElementsByTagName('header')[0];
+    if (typeof window !== 'undefined' && typeof header !== 'undefined') {
+      const isDocked = window.pageYOffset <= header.clientHeight;
+      return this.state.headerState.state === 'Pinned' && !isDocked
+        ? '#0a0a0a'
+        : '';
+    }
+    return '';
+  }
   public render() {
     const {
       children,
       ...rest,
     } = this.props;
+    const backgroundColor = this.backgroundColor();
     return (
       <HeaderComponent
         {...rest}
+        backgroundColor={backgroundColor}
         height={this.state.headerState.height}
         state={this.state.headerState.state}
       >
