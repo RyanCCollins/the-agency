@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Header, Box, Heading } from 'ui';
+import { Header, Box, Heading, Anchor } from 'ui';
 import { Burger } from 'components';
 
 export interface Props extends React.HTMLProps<typeof Navigation> {
@@ -18,9 +18,11 @@ export default function Navigation({
         alignItems="center"
         justifyContent="space-between"
       >
-        <Heading margin="none" tag="h3" upcase>
-          {brandText}
-        </Heading>
+        <Anchor path="/" plain>
+          <Heading margin="none" tag="h3" upcase>
+            {brandText}
+          </Heading>
+        </Anchor>
         <Burger onClick={onToggleMenu} />
       </Box>
     </Header>

@@ -15,13 +15,15 @@ export default function Presentation({
       <Box pad="large" flexDirection="row" justifyContent="space-between">
         <Box>
           <WithAnimation type="fadeInUp" isVisible={isVisible}>
-            <Heading color="white" upcase>The Agency</Heading>
+            <Anchor path="/" plain>
+              <Heading color="white" upcase>The Agency</Heading>
+            </Anchor>
           </WithAnimation>
         </Box>
         <Ul>
           <Li>
             <WithAnimation type="fadeInUp" isVisible={isVisible}>
-              <Anchor path="/case-studies">
+              <Anchor path="/case-studies" plain>
                 <Heading textAlign="right" tag="h2" color="white">
                   Case Studies
                 </Heading>
