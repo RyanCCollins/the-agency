@@ -19,4 +19,4 @@ export interface ActionMap extends ActionCreatorsMapObject {
   loadCancel: () => LoadCancelAction;
 }
 
-export { Data } from './state';
+export { Data, Project } from './state';
