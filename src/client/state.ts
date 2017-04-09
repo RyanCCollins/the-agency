@@ -1,8 +1,8 @@
 /* GENERATOR-IMPORT-STATE */
-import { initialState as portfolioState, State as PortfolioState } from './containers/Portfolio/state';
-import { initialState as navigationMenuState, State as NavigationMenuState } from './containers/NavigationMenu/state';
-import { initialState as homeState, State as HomeState } from './containers/Home/state';
-import { initialState as layoutState, State as LayoutState } from 'containers/Layout/state';
+import { initialState as portfolioState, State as PortfolioState } from 'features/Portfolio/state';
+import { initialState as navigationMenuState, State as NavigationMenuState } from 'features/NavigationMenu/state';
+import { initialState as homeState, State as HomeState } from 'features/Home/state';
+import { initialState as layoutState, State as LayoutState } from 'features/Layout/state';
 
 export interface State {
   /* GENERATOR-EXPORT-STATE-TYPE */

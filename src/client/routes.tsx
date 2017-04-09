@@ -2,9 +2,9 @@ import * as React from 'react';
 import { ApolloProvider } from 'react-apollo';
 import { ThemeProvider } from 'styled-components';
 import { Route, IndexRoute, Router as ReactRouter } from 'react-router';
+import { Layout, Home, Portfolio } from 'features';
 import client from './apolloClient';
 import store, { history } from './store';
-import { Layout, Home, Portfolio } from './containers';
 import colors from './theming';
 
 import ReactGA from 'react-ga';

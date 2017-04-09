@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Anchor } from 'ui';
 import ButtonComponent from './styles';
 import { Size } from './types';
 
@@ -9,6 +10,7 @@ export interface Props extends React.HTMLProps<HTMLButtonElement & Button> {
   fontSize?: Size;
   borderColor?: string;
   label?: string;
+  path?: string;
 }
 
 class Button extends React.Component<Props, undefined> {
@@ -19,14 +21,22 @@ class Button extends React.Component<Props, undefined> {
     fontSize: 'medium',
   };
   public render() {
-    const { children, label, ...props } = this.props;
-    return (
+    const { children, label, path, ...props } = this.props;
+    const button = (
       <ButtonComponent
         {...props}
       >
         {children || label || ''}
       </ButtonComponent>
     );
+    if (path && path !== '') {
+      return (
+        <Anchor path={path} plain>
+          {button}
+        </Anchor>
+      );
+    }
+    return button;
   }
 }
 

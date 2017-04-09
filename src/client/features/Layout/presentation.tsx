@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NavigationMenu } from 'containers';
+import { NavigationMenu } from 'features';
 import { Navigation } from 'components';
 import { Main } from './styles';
 import { Props } from './types';

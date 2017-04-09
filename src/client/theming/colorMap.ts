@@ -1,14 +1,14 @@
 import { ThemeColorMap } from './types';
 
 const colorMap: ThemeColorMap = {
-  dark1: '#293953',
-  dark2: '#6B4E71',
-  dark3: '#829399',
-  light1: '#34E4EA',
-  light2: '#D6DBB2',
-  light3: '#6D72C3',
-  primary: '#007acc',
-  secondary: '#c05b4d',
+  dark1: '#13293D',
+  dark2: '#006494',
+  dark3: '#92374D',
+  light1: '#0072BB',
+  light2: '#119DA4',
+  light3: '#0C7489',
+  primary: '#03A9F4',
+  secondary: '#9c27b0',
   ok: '#8cc800',
   warning: '#ffd602',
   error: '#ff324d',
@@ -19,6 +19,9 @@ const colorMap: ThemeColorMap = {
   black1: '#0a0a0a',
   black2: '#2d2d2d',
   black3: '#555555',
+  gray1: '#696969',
+  gray2: '#7c7c7c',
+  gray3: '#828282',
 };
 
 export default colorMap;

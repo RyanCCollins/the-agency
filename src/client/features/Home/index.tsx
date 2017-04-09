@@ -2,10 +2,12 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { State as GlobalState } from 'root/state';
+import { withTheme } from 'styled-components';
 import { Action, ActionMap, ErrorType } from './types';
 import actionCreators from './actionCreators';
 import * as selectors from './selectors';
 import Presentation from './presentation';
+import { ThemeColorMap } from '../../types';
 
 type MapStateToProps = (state: GlobalState) => StateProps;
 const mapStateToProps: MapStateToProps = (state) => ({
@@ -37,7 +39,11 @@ export interface StateProps {
   data?: string;
 }
 
-export type Props = StateProps & DispatchProps;
+interface OwnProps {
+  theme: ThemeColorMap;
+}
+
+export type Props = StateProps & DispatchProps & OwnProps;
 
 class Home extends React.Component<Props, State> {
   constructor() {
@@ -82,4 +88,4 @@ class Home extends React.Component<Props, State> {
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Home);
+)(withTheme(Home));

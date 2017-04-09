@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box } from 'ui';
 import { CaseStudy } from 'components';
-import { Project } from 'containers/Portfolio/types';
+import { Project } from 'features/Portfolio/types';
 
 export interface Props extends React.HTMLProps<typeof CaseStudies> {
   items: Project[];

@@ -1,9 +1,9 @@
 import { Action } from 'redux';
 /* GENERATOR-IMPORT */
-import * as PortfolioTypes from './containers/Portfolio/types';
-import * as NavigationMenuTypes from './containers/NavigationMenu/types';
-import * as HomeTypes from './containers/Home/types';
-import * as LayoutTypes from 'containers/Layout/types';
+import * as PortfolioTypes from 'features/Portfolio/types';
+import * as NavigationMenuTypes from 'features/NavigationMenu/types';
+import * as HomeTypes from 'features/Home/types';
+import * as LayoutTypes from 'features/Layout/types';
 export { ThemeColorMap } from './theming/types';
 
 export interface PayloadAction<P> extends Action {
