@@ -11,7 +11,7 @@ interface Props extends HomeProps {
 export default function Presentation({ section1, section2, theme }: Props) {
   return (
     <Wrapper>
-      <Hero style={{ marginTop: -100, paddingTop: 100 }} backgroundColor={theme.primary}>
+      <Hero backgroundColor={theme.primary}>
         <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
           <Image
             alt="The Agency"
