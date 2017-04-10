@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Component from './styles';
 
-export interface Props extends React.Props<typeof Hero> {
+export interface Props extends React.HTMLProps<typeof Hero> {
   backgroundColor?: string;
   full?: boolean;
 }
