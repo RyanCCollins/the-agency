@@ -37,7 +37,7 @@ export default class CaseStudy extends React.Component<Props, State> {
     const windowHeight = window ? window.innerHeight : 1000;
     const node = findDOMNode(this.divRef);
     if (node) {
-      const isVisible = node.getBoundingClientRect().top < windowHeight;
+      const isVisible = node.getBoundingClientRect().top < windowHeight - (windowHeight / 4);
       this.setState({
         isVisible,
       });
@@ -47,7 +47,7 @@ export default class CaseStudy extends React.Component<Props, State> {
     const { image, title } = this.props;
     return (
       <div ref={(ref) => { this.divRef = ref; }}>
-        <WithAnimation type="fadeInUp" delay={100} {...this.state}>
+        <WithAnimation duration={1000} {...this.state}>
           <Box pad="large">
             <Relative>
               <Overlay>

@@ -6,7 +6,6 @@ import Hr from './hr';
 
 export default function Presentation({
   theme,
-  isMounted,
   data: { items },
 }: Props) {
   return (
@@ -15,7 +14,7 @@ export default function Presentation({
         <Headline color="#666" fontWeight={700}>Case Studies</Headline>
         <Hr color="#666" />
       </Box>
-      <CaseStudies isMounted={isMounted} items={items} />
+      <CaseStudies items={items} />
     </Box>
   );
 }

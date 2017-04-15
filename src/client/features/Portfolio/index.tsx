@@ -38,7 +38,7 @@ interface State {
   isMounted: boolean,
 }
 
-interface OwnProps { theme: ThemeColorMap; isMounted: boolean; }
+interface OwnProps { theme: ThemeColorMap; }
 export type Props = StateProps & DispatchProps & OwnProps;
 
 class Portfolio extends React.Component<Props, State> {
