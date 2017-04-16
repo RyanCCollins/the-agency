@@ -22,13 +22,18 @@ function height(props: Props) {
       height: ${height};
     `;
   }
+  if (props.full) {
+    return css`
+      height: 100vh;
+    `;
+  }
   return css`
-    height: 350px;
+    height: auto;
+    min-height: 350px;
   `;
 }
 
 export default styled.div`
-  height: ${(props: Props) => props.full ? '100vh' : 'inherit'};
   text-align: center;
   width: 100%;
   ${(props) => background(props)}
