@@ -4,17 +4,17 @@ import {
 } from 'graphql';
 
 import types from '../../types';
-import PostModel from '../../../db/models/post';
+import ProjectModel from '../../../db/models/project';
 
 export default {
-  type: types.postType,
+  type: types.projectType,
   args: {
     id: {
       type: new GraphQLNonNull(GraphQLID),
     },
   },
   resolve(_, args, __) {
-    return PostModel
+    return ProjectModel
       .findById(args.id)
       .populate('comments')
       .exec();

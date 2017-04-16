@@ -35,7 +35,7 @@
     "predeploy": "rimraf build/public/*.*",
     "deploy": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --config ./webpack.config.prod.js",
     "postdeploy": "npm run compile",
-    "compile": "./node_modules/.bin/tsc",
+    "compile": "./node_modules/.bin/tsc && cd ./packages/ui && ./node_modules/.bin/tsc && cd ../..",
     "setup:yarn": "yarn",
     "preserve": "npm run compile",
     "lint": "tslint \"packages/**/*.ts{,x}\" && tslint \"src/**/*.ts{,x}\"",

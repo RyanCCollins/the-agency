@@ -3,13 +3,13 @@ import {
 } from 'graphql';
 
 import types from '../../types';
-import PostModel from '../../../db/models/post';
+import ProjectModel from '../../../db/models/project';
 
 export default {
-  type: new GraphQLList(types.postType),
+  type: new GraphQLList(types.projectType),
   args: {},
   resolve() {
-    return PostModel
+    return ProjectModel
       .find()
       .exec();
   },

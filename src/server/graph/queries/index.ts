@@ -1,7 +1,5 @@
-import posts from './post';
-import comment from './comment';
+import projects from './project';
 
 export default {
-  ...posts,
-  ...comment,
+  ...projects,
 };

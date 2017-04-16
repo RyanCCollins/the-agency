@@ -9,7 +9,6 @@
     "sourceMap": true,
     "outDir": "dist",
     "jsx": "react",
-    "allowJs": true,
     "noUnusedLocals": true
   },
   "include": [

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const PostSchema = new mongoose.Schema({
+const ProjectSchema = new mongoose.Schema({
   title: {
     type: String,
   },
@@ -10,7 +10,6 @@ const PostSchema = new mongoose.Schema({
   content: {
     type: String,
   },
-  comments: [{ type: String, ref: 'Comment' }],
 });
 
-export default mongoose.model('Post', PostSchema);
+export default mongoose.model('Project', ProjectSchema);
