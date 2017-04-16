@@ -11,6 +11,7 @@ interface State {
 export interface Project {
   title: string;
   image: string;
+  content?: string;
 }
 
 export interface Props {

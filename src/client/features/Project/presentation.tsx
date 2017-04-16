@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Headline, LoadingIndicator } from 'ui';
+import { Box, Headline, LoadingIndicator, Hero, Article } from 'ui';
 import { Props as ParentProps } from './types';
 import Hr from '../Portfolio/hr';
 
@@ -28,9 +28,11 @@ export default function Presentation({
   }
   return (
     <Box alignItems="center" backgroundColor={theme.offwhite}>
+      <Hero height={650} backgroundImage={project.image} />
       <Box pad="large" alignItems="center">
         <Headline color="#666" fontWeight={700}>{project.title}</Headline>
         <Hr color="#666" />
+        <Article pad="large" content={project.content} />
       </Box>
     </Box>
   );
