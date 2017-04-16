@@ -1,45 +1,24 @@
 import * as React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators, Dispatch } from 'redux';
-import { State as GlobalState } from 'root/state';
 import { withTheme } from 'styled-components';
-import { Action, ActionMap, ErrorType, Data } from './types';
-import actionCreators from './actionCreators';
-import * as selectors from './selectors';
 import Presentation from './presentation';
 import { ThemeColorMap } from '../../types';
-
-type MapStateToProps = (state: GlobalState) => StateProps;
-const mapStateToProps: MapStateToProps = (state) => ({
-  isLoading: selectors.selectIsLoading(state),
-  error: selectors.selectError(state),
-  data: selectors.selectData(state),
-});
-
-type MapDispatchToProps = (dispatch: Dispatch<Action>) => DispatchProps;
-const mapDispatchToProps: MapDispatchToProps = (dispatch) => ({
-  actions: bindActionCreators(
-    actionCreators,
-    dispatch,
-  ),
-});
-
-export interface DispatchProps {
-  actions: ActionMap;
-}
-
-export interface StateProps {
-  isLoading: boolean;
-  error?: ErrorType;
-  data?: Data;
-}
+import withGraphql from './withGraphql';
 
 interface State {
   isMounted: boolean,
 }
 
-interface OwnProps { theme: ThemeColorMap; }
-export type Props = StateProps & DispatchProps & OwnProps;
+export interface Project {
+  title: string;
+  image: string;
+}
+
+export interface Props {
+  theme: ThemeColorMap;
+  projects: Project[];
+  loading: boolean;
+  error: string;
+}
 
 class Portfolio extends React.Component<Props, State> {
   constructor() {
@@ -62,7 +41,4 @@ class Portfolio extends React.Component<Props, State> {
   }
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(withTheme(Portfolio));
+export default withTheme(withGraphql(Portfolio));

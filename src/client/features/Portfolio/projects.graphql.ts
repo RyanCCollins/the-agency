@@ -6,7 +6,6 @@ export default gql`
       id: _id
       title
       image
-      content
     }
   }
 `;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Anchor } from 'ui';
+import { Anchor } from '../';
 import ButtonComponent from './styles';
 import { Size } from './types';
 

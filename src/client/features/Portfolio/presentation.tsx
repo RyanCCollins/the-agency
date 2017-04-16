@@ -6,7 +6,7 @@ import Hr from './hr';
 
 export default function Presentation({
   theme,
-  data: { items },
+  projects,
 }: Props) {
   return (
     <Box alignItems="center" backgroundColor={theme.offwhite}>
@@ -14,7 +14,9 @@ export default function Presentation({
         <Headline color="#666" fontWeight={700}>Case Studies</Headline>
         <Hr color="#666" />
       </Box>
-      <CaseStudies items={items} />
+      {projects &&
+        <CaseStudies items={projects} />
+      }
     </Box>
   );
 }
