@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ApolloProvider } from 'react-apollo';
 import { ThemeProvider } from 'styled-components';
 import { Route, IndexRoute, Router as ReactRouter } from 'react-router';
-import { Layout, Home, Portfolio } from 'features';
+import { Layout, Home, Portfolio, Project } from 'features';
 import client from './apolloClient';
 import store, { history } from './store';
 import colors from './theming';
@@ -25,6 +25,7 @@ export const routes = (
   <Route path="/" component={Layout}>
     <IndexRoute component={Home} />
     <Route path="/case-studies" component={Portfolio} />
+    <Route path="/case-study/:id" component={Project} />
     <Route path="*" component={Home} />
   </Route>
 );

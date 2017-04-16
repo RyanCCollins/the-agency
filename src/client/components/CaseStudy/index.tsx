@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { findDOMNode } from 'react-dom';
-import { Box, Image, WithAnimation } from 'ui';
+import { Box, Image, WithAnimation, Anchor } from 'ui';
 import Overlay from './overlay';
 import Relative from './relative';
 
@@ -44,20 +44,22 @@ export default class CaseStudy extends React.Component<Props, State> {
     }
   }
   public render() {
-    const { image, title } = this.props;
+    const { image, title, id } = this.props;
     return (
-      <div ref={(ref) => { this.divRef = ref; }}>
-        <WithAnimation duration={1000} {...this.state}>
-          <Box pad="large">
-            <Relative>
-              <Overlay>
-                <p>{title}</p>
-              </Overlay>
-              <Image imageSize="large" src={image} alt={title} />
-            </Relative>
-          </Box>
-        </WithAnimation>
-      </div>
+      <Anchor path={`/case-study/${id}`} plain>
+        <div ref={(ref) => { this.divRef = ref; }}>
+          <WithAnimation duration={1000} {...this.state}>
+            <Box pad="large">
+              <Relative>
+                <Overlay>
+                  <p>{title}</p>
+                </Overlay>
+                <Image imageSize="large" src={image} alt={title} />
+              </Relative>
+            </Box>
+          </WithAnimation>
+        </div>
+      </Anchor>
     );
   }
 }

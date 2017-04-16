@@ -1,38 +1,18 @@
 import * as React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators, Dispatch } from 'redux';
-import { State as GlobalState } from 'root/state';
-import { Action, ActionMap, ErrorType } from './types';
-import actionCreators from './actionCreators';
-import * as selectors from './selectors';
+import { compose } from 'redux';
+import { withTheme } from 'styled-components';
 import Presentation from './presentation';
+import withGraphql from './withGraphql';
+import { PortfolioTypes } from '../../types';
+import { ThemeColorMap } from '../../types';
 
-type MapStateToProps = (state: GlobalState) => StateProps;
-const mapStateToProps: MapStateToProps = (state) => ({
-  isLoading: selectors.selectIsLoading(state),
-  error: selectors.selectError(state),
-  data: selectors.selectData(state),
-});
-
-type MapDispatchToProps = (dispatch: Dispatch<Action>) => DispatchProps;
-const mapDispatchToProps: MapDispatchToProps = (dispatch) => ({
-  actions: bindActionCreators(
-    actionCreators,
-    dispatch,
-  ),
-});
-
-export interface DispatchProps {
-  actions: ActionMap;
+export interface Props {
+  project: PortfolioTypes.Project;
+  loading: boolean;
+  error: string;
+  refetch: () => void;
+  theme: ThemeColorMap;
 }
-
-export interface StateProps {
-  isLoading: boolean;
-  error?: ErrorType;
-  data?: string;
-}
-
-export type Props = StateProps & DispatchProps;
 
 class Project extends React.Component<Props, undefined> {
   public render() {
@@ -42,7 +22,4 @@ class Project extends React.Component<Props, undefined> {
   }
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Project);
+export default compose(withTheme, withGraphql)(Project);
