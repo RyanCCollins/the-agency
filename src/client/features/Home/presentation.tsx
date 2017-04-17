@@ -4,11 +4,10 @@ import { Props as HomeProps } from './types';
 import Wrapper from './styles';
 
 interface Props extends HomeProps {
-  section1: boolean;
-  section2: boolean;
+  sections: boolean[];
 }
 
-export default function Presentation({ section1, section2, theme }: Props) {
+export default function Presentation({ sections, theme }: Props) {
   return (
     <Wrapper>
       <Hero backgroundColor={theme.primary}>
@@ -27,7 +26,7 @@ export default function Presentation({ section1, section2, theme }: Props) {
         <Hero backgroundColor={theme.secondary}>
           <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
             <Box style={{ maxWidth: 576 }} justifyContent="center">
-              <WithAnimation type="fadeInUp" isVisible={section1}>
+              <WithAnimation type="fadeInUp" isVisible={sections[0]}>
                 <Headline color={theme.white1}>
                   We are a dedicated digital agency
                 </Headline>
@@ -40,7 +39,7 @@ export default function Presentation({ section1, section2, theme }: Props) {
         <Hero backgroundColor={theme.light3}>
           <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
             <Box style={{ maxWidth: 576 }} justifyContent="center">
-              <WithAnimation type="fadeInUp" isVisible={section2}>
+              <WithAnimation type="fadeInUp" isVisible={sections[1]}>
                 <Headline color={theme.white1}>
                   We build scalable solutions for the web and mobile platforms
                 </Headline>
@@ -49,6 +48,25 @@ export default function Presentation({ section1, section2, theme }: Props) {
                   backgroundColor="transparent"
                   path="/case-studies"
                   label="See Case Studies"
+                />
+              </WithAnimation>
+            </Box>
+          </Box>
+        </Hero>
+      </div>
+      <div id="section-three">
+        <Hero backgroundColor={theme.primary}>
+          <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
+            <Box style={{ maxWidth: 576 }} justifyContent="center">
+              <WithAnimation type="fadeInUp" isVisible={sections[2]}>
+                <Headline color={theme.white1}>
+                  Need our help?
+                </Headline>
+                <Button
+                  borderColor={theme.white1}
+                  backgroundColor="transparent"
+                  path="/contact"
+                  label="Get in Touch"
                 />
               </WithAnimation>
             </Box>

@@ -25,8 +25,7 @@ const mapDispatchToProps: MapDispatchToProps = (dispatch) => ({
 });
 
 interface State {
-  section1: boolean;
-  section2: boolean;
+  sections: boolean[];
 }
 
 export interface DispatchProps {
@@ -45,13 +44,22 @@ interface OwnProps {
 
 export type Props = StateProps & DispatchProps & OwnProps;
 
+function sectionIsVisible(id) {
+  const windowHeight = window ? window.innerHeight : 1000;
+  const node = document.getElementById(id);
+  return node.getBoundingClientRect().top < windowHeight / 2;
+}
+
 class Home extends React.Component<Props, State> {
   constructor() {
     super();
     this.handleScroll = this.handleScroll.bind(this);
     this.state = {
-      section1: false,
-      section2: false,
+      sections: [
+        false,
+        false,
+        false,
+      ],
     };
   }
   public componentDidMount() {
@@ -65,14 +73,12 @@ class Home extends React.Component<Props, State> {
     }
   }
   private handleScroll() {
-    const windowHeight = window ? window.innerHeight : 1000;
-    const section1Node = document.getElementById('section-one');
-    const section2Node = document.getElementById('section-two');
-    const section1 = section1Node.getBoundingClientRect().top < windowHeight / 2;
-    const section2 = section2Node.getBoundingClientRect().top < windowHeight / 2;
     this.setState({
-      section1,
-      section2,
+      sections: [
+        sectionIsVisible('section-one'),
+        sectionIsVisible('section-two'),
+        sectionIsVisible('section-three'),
+      ],
     });
   }
   public render() {
