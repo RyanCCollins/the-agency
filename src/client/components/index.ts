@@ -1,4 +1,5 @@
 /* GENERATOR-IMPORT */
+import Footer from './Footer';
 import CaseStudies from './CaseStudies';
 import CaseStudy from './CaseStudy';
 import Navigation from './Navigation';
@@ -8,6 +9,7 @@ import Html from './Html';
 
 export {
   /* GENERATOR-EXPORT */
+  Footer,
   CaseStudies,
   CaseStudy,
   Navigation,

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavigationMenu } from 'features';
-import { Navigation } from 'components';
+import { Navigation, Footer } from 'components';
 import { Main } from './styles';
 import { Props } from './types';
 
@@ -14,6 +14,7 @@ export default function Presentation({
       <NavigationMenu />
       <Navigation brandText={brandText} onToggleMenu={actions.toggleMenu} />
       {React.cloneElement(children)}
+      <Footer />
     </Main>
   );
 }
