@@ -36,6 +36,6 @@ function height(props: Props) {
 export default styled.div`
   text-align: center;
   width: 100%;
-  ${(props) => background(props)}
-  ${(props) => height(props)}
+  ${(props: Props) => background(props)}
+  ${(props: Props) => height(props)}
 `;
