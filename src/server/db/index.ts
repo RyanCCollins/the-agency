@@ -6,21 +6,21 @@ function seedProjects() {
   return [
     {
       title: 'HPE Brand Central',
-      image: 'https://github.com/RyanCCollins/cdn/blob/master/brand-central/bcmain.png?raw=true',
+      image: 'https://github.com/RyanCCollins/cdn/blob/master/brand-central/bcmockup.jpg?raw=true',
       content: '# About \n HPE Brand Central is a cornerstone web application for HPE employees ' +
         'and clients.  We were brought onto this project to deliver a modern progressive web ' +
         'application that could be fully managed by the client.',
     },
     {
       title: 'Grommet CMS',
-      image: 'https://github.com/RyanCCollins/cdn/blob/master/cms/main.png?raw=true',
+      image: 'https://github.com/RyanCCollins/cdn/blob/master/cms/bccmsmockup.jpg?raw=true',
       content: '# About \n As part of our work on the HPE Brand Central site, we '
         + 'sought out to build a content management system that was as '
         + 'modern and progressive as the site we built from it.',
     },
     {
       title: 'HPE Datacenter Care',
-      image: 'https://github.com/RyanCCollins/cdn/blob/master/datacenter-care/main.png?raw=true',
+      image: 'https://github.com/RyanCCollins/cdn/blob/master/datacenter-care/datacentercaremockup.jpg?raw=true',
       content: '# About \n Coming soon.',
     },
     {
