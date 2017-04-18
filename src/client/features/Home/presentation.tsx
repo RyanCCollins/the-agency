@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Hero, Headline, Image, Box, WithAnimation, Button } from 'ui';
 import { Props as HomeProps } from './types';
-import Wrapper from './styles';
+import Wrapper from './wrapper';
 
 interface Props extends HomeProps {
   sections: boolean[];
