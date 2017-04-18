@@ -1,8 +1,5 @@
 import { css } from 'styled-components';
-
-interface Props {
-  color: string;
-}
+import { Props } from './hr'; 
 
 export default function styles({ color }: Props) {
   return css`
