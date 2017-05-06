@@ -1,0 +1,585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CaseStudies /> when mount rendered should create a snapshot 1`] = `
+<CaseStudies
+  items={
+    Array [
+      Object {
+        "__typename": "Project",
+        "id": "58f43041f445ed0e26cd46e6",
+        "image": "https://github.com/RyanCCollins/cdn/blob/master/brand-central/bcmockup.jpg?raw=true",
+        "title": "HPE Brand Central",
+      },
+      Object {
+        "__typename": "Project",
+        "id": "58f43041f445ed0e26cd46e7",
+        "image": "https://github.com/RyanCCollins/cdn/blob/master/cms/bccmsmockup.jpg?raw=true",
+        "title": "Grommet CMS",
+      },
+      Object {
+        "__typename": "Project",
+        "id": "58f43041f445ed0e26cd46e8",
+        "image": "https://github.com/RyanCCollins/cdn/blob/master/datacenter-care/datacentercaremockup.jpg?raw=true",
+        "title": "HPE Datacenter Care",
+      },
+      Object {
+        "__typename": "Project",
+        "id": "58f43041f445ed0e26cd46ea",
+        "image": "https://github.com/RyanCCollins/cdn/blob/master/portfolio-image-gallery-images/mentor-calendar/main-mockup.jpg?raw=true",
+        "title": "Udacity Mentor Calendar",
+      },
+      Object {
+        "__typename": "Project",
+        "id": "58f43041f445ed0e26cd46e9",
+        "image": "https://github.com/RyanCCollins/cdn/blob/master/astra.jpg?raw=true",
+        "title": "Astra Finance",
+      },
+    ]
+  }
+>
+  <Box
+    flexDirection="column"
+    style={
+      Object {
+        "paddingBottom": 100,
+      }
+    }
+  >
+    <styled.div
+      flexDirection="column"
+      style={
+        Object {
+          "paddingBottom": 100,
+        }
+      }
+    >
+      <div
+        className="lklsWn"
+        style={
+          Object {
+            "paddingBottom": 100,
+          }
+        }
+      >
+        <CaseStudy
+          __typename="Project"
+          id="58f43041f445ed0e26cd46e6"
+          image="https://github.com/RyanCCollins/cdn/blob/master/brand-central/bcmockup.jpg?raw=true"
+          title="HPE Brand Central"
+        >
+          <withRouter(Anchor)
+            path="/case-study/58f43041f445ed0e26cd46e6"
+            plain={true}
+          >
+            <Anchor
+              method="push"
+              path="/case-study/58f43041f445ed0e26cd46e6"
+              plain={true}
+            >
+              <styled.a
+                onClick={[Function]}
+                plain={true}
+              >
+                <a
+                  className="ckTJUm"
+                  onClick={[Function]}
+                >
+                  <div>
+                    <WithAnimation
+                      duration={1000}
+                      isVisible={true}
+                    >
+                      <styled.div
+                        delay={0}
+                        duration={1000}
+                        isVisible={true}
+                        type="fadeIn"
+                      >
+                        <div
+                          className="jOKFwR"
+                          type="fadeIn"
+                        >
+                          <Box
+                            pad="large"
+                          >
+                            <styled.div
+                              pad="large"
+                            >
+                              <div
+                                className="bWdHyO"
+                              >
+                                <styled.div>
+                                  <div
+                                    className="innYbI"
+                                  >
+                                    <styled.div>
+                                      <div
+                                        className="kPGFVC"
+                                      >
+                                        <p>
+                                          HPE Brand Central
+                                        </p>
+                                      </div>
+                                    </styled.div>
+                                    <styled.img
+                                      alt="HPE Brand Central"
+                                      imageSize="large"
+                                      src="https://github.com/RyanCCollins/cdn/blob/master/brand-central/bcmockup.jpg?raw=true"
+                                      style={
+                                        Object {
+                                          "maxWidth": 700,
+                                        }
+                                      }
+                                    >
+                                      <img
+                                        alt="HPE Brand Central"
+                                        className="gcaPMe"
+                                        src="https://github.com/RyanCCollins/cdn/blob/master/brand-central/bcmockup.jpg?raw=true"
+                                        style={
+                                          Object {
+                                            "maxWidth": 700,
+                                          }
+                                        }
+                                      />
+                                    </styled.img>
+                                  </div>
+                                </styled.div>
+                              </div>
+                            </styled.div>
+                          </Box>
+                        </div>
+                      </styled.div>
+                    </WithAnimation>
+                  </div>
+                </a>
+              </styled.a>
+            </Anchor>
+          </withRouter(Anchor)>
+        </CaseStudy>
+        <CaseStudy
+          __typename="Project"
+          id="58f43041f445ed0e26cd46e7"
+          image="https://github.com/RyanCCollins/cdn/blob/master/cms/bccmsmockup.jpg?raw=true"
+          title="Grommet CMS"
+        >
+          <withRouter(Anchor)
+            path="/case-study/58f43041f445ed0e26cd46e7"
+            plain={true}
+          >
+            <Anchor
+              method="push"
+              path="/case-study/58f43041f445ed0e26cd46e7"
+              plain={true}
+            >
+              <styled.a
+                onClick={[Function]}
+                plain={true}
+              >
+                <a
+                  className="ckTJUm"
+                  onClick={[Function]}
+                >
+                  <div>
+                    <WithAnimation
+                      duration={1000}
+                      isVisible={true}
+                    >
+                      <styled.div
+                        delay={0}
+                        duration={1000}
+                        isVisible={true}
+                        type="fadeIn"
+                      >
+                        <div
+                          className="jOKFwR"
+                          type="fadeIn"
+                        >
+                          <Box
+                            pad="large"
+                          >
+                            <styled.div
+                              pad="large"
+                            >
+                              <div
+                                className="bWdHyO"
+                              >
+                                <styled.div>
+                                  <div
+                                    className="innYbI"
+                                  >
+                                    <styled.div>
+                                      <div
+                                        className="kPGFVC"
+                                      >
+                                        <p>
+                                          Grommet CMS
+                                        </p>
+                                      </div>
+                                    </styled.div>
+                                    <styled.img
+                                      alt="Grommet CMS"
+                                      imageSize="large"
+                                      src="https://github.com/RyanCCollins/cdn/blob/master/cms/bccmsmockup.jpg?raw=true"
+                                      style={
+                                        Object {
+                                          "maxWidth": 700,
+                                        }
+                                      }
+                                    >
+                                      <img
+                                        alt="Grommet CMS"
+                                        className="gcaPMe"
+                                        src="https://github.com/RyanCCollins/cdn/blob/master/cms/bccmsmockup.jpg?raw=true"
+                                        style={
+                                          Object {
+                                            "maxWidth": 700,
+                                          }
+                                        }
+                                      />
+                                    </styled.img>
+                                  </div>
+                                </styled.div>
+                              </div>
+                            </styled.div>
+                          </Box>
+                        </div>
+                      </styled.div>
+                    </WithAnimation>
+                  </div>
+                </a>
+              </styled.a>
+            </Anchor>
+          </withRouter(Anchor)>
+        </CaseStudy>
+        <CaseStudy
+          __typename="Project"
+          id="58f43041f445ed0e26cd46e8"
+          image="https://github.com/RyanCCollins/cdn/blob/master/datacenter-care/datacentercaremockup.jpg?raw=true"
+          title="HPE Datacenter Care"
+        >
+          <withRouter(Anchor)
+            path="/case-study/58f43041f445ed0e26cd46e8"
+            plain={true}
+          >
+            <Anchor
+              method="push"
+              path="/case-study/58f43041f445ed0e26cd46e8"
+              plain={true}
+            >
+              <styled.a
+                onClick={[Function]}
+                plain={true}
+              >
+                <a
+                  className="ckTJUm"
+                  onClick={[Function]}
+                >
+                  <div>
+                    <WithAnimation
+                      duration={1000}
+                      isVisible={true}
+                    >
+                      <styled.div
+                        delay={0}
+                        duration={1000}
+                        isVisible={true}
+                        type="fadeIn"
+                      >
+                        <div
+                          className="jOKFwR"
+                          type="fadeIn"
+                        >
+                          <Box
+                            pad="large"
+                          >
+                            <styled.div
+                              pad="large"
+                            >
+                              <div
+                                className="bWdHyO"
+                              >
+                                <styled.div>
+                                  <div
+                                    className="innYbI"
+                                  >
+                                    <styled.div>
+                                      <div
+                                        className="kPGFVC"
+                                      >
+                                        <p>
+                                          HPE Datacenter Care
+                                        </p>
+                                      </div>
+                                    </styled.div>
+                                    <styled.img
+                                      alt="HPE Datacenter Care"
+                                      imageSize="large"
+                                      src="https://github.com/RyanCCollins/cdn/blob/master/datacenter-care/datacentercaremockup.jpg?raw=true"
+                                      style={
+                                        Object {
+                                          "maxWidth": 700,
+                                        }
+                                      }
+                                    >
+                                      <img
+                                        alt="HPE Datacenter Care"
+                                        className="gcaPMe"
+                                        src="https://github.com/RyanCCollins/cdn/blob/master/datacenter-care/datacentercaremockup.jpg?raw=true"
+                                        style={
+                                          Object {
+                                            "maxWidth": 700,
+                                          }
+                                        }
+                                      />
+                                    </styled.img>
+                                  </div>
+                                </styled.div>
+                              </div>
+                            </styled.div>
+                          </Box>
+                        </div>
+                      </styled.div>
+                    </WithAnimation>
+                  </div>
+                </a>
+              </styled.a>
+            </Anchor>
+          </withRouter(Anchor)>
+        </CaseStudy>
+        <CaseStudy
+          __typename="Project"
+          id="58f43041f445ed0e26cd46ea"
+          image="https://github.com/RyanCCollins/cdn/blob/master/portfolio-image-gallery-images/mentor-calendar/main-mockup.jpg?raw=true"
+          title="Udacity Mentor Calendar"
+        >
+          <withRouter(Anchor)
+            path="/case-study/58f43041f445ed0e26cd46ea"
+            plain={true}
+          >
+            <Anchor
+              method="push"
+              path="/case-study/58f43041f445ed0e26cd46ea"
+              plain={true}
+            >
+              <styled.a
+                onClick={[Function]}
+                plain={true}
+              >
+                <a
+                  className="ckTJUm"
+                  onClick={[Function]}
+                >
+                  <div>
+                    <WithAnimation
+                      duration={1000}
+                      isVisible={true}
+                    >
+                      <styled.div
+                        delay={0}
+                        duration={1000}
+                        isVisible={true}
+                        type="fadeIn"
+                      >
+                        <div
+                          className="jOKFwR"
+                          type="fadeIn"
+                        >
+                          <Box
+                            pad="large"
+                          >
+                            <styled.div
+                              pad="large"
+                            >
+                              <div
+                                className="bWdHyO"
+                              >
+                                <styled.div>
+                                  <div
+                                    className="innYbI"
+                                  >
+                                    <styled.div>
+                                      <div
+                                        className="kPGFVC"
+                                      >
+                                        <p>
+                                          Udacity Mentor Calendar
+                                        </p>
+                                      </div>
+                                    </styled.div>
+                                    <styled.img
+                                      alt="Udacity Mentor Calendar"
+                                      imageSize="large"
+                                      src="https://github.com/RyanCCollins/cdn/blob/master/portfolio-image-gallery-images/mentor-calendar/main-mockup.jpg?raw=true"
+                                      style={
+                                        Object {
+                                          "maxWidth": 700,
+                                        }
+                                      }
+                                    >
+                                      <img
+                                        alt="Udacity Mentor Calendar"
+                                        className="gcaPMe"
+                                        src="https://github.com/RyanCCollins/cdn/blob/master/portfolio-image-gallery-images/mentor-calendar/main-mockup.jpg?raw=true"
+                                        style={
+                                          Object {
+                                            "maxWidth": 700,
+                                          }
+                                        }
+                                      />
+                                    </styled.img>
+                                  </div>
+                                </styled.div>
+                              </div>
+                            </styled.div>
+                          </Box>
+                        </div>
+                      </styled.div>
+                    </WithAnimation>
+                  </div>
+                </a>
+              </styled.a>
+            </Anchor>
+          </withRouter(Anchor)>
+        </CaseStudy>
+        <CaseStudy
+          __typename="Project"
+          id="58f43041f445ed0e26cd46e9"
+          image="https://github.com/RyanCCollins/cdn/blob/master/astra.jpg?raw=true"
+          title="Astra Finance"
+        >
+          <withRouter(Anchor)
+            path="/case-study/58f43041f445ed0e26cd46e9"
+            plain={true}
+          >
+            <Anchor
+              method="push"
+              path="/case-study/58f43041f445ed0e26cd46e9"
+              plain={true}
+            >
+              <styled.a
+                onClick={[Function]}
+                plain={true}
+              >
+                <a
+                  className="ckTJUm"
+                  onClick={[Function]}
+                >
+                  <div>
+                    <WithAnimation
+                      duration={1000}
+                      isVisible={true}
+                    >
+                      <styled.div
+                        delay={0}
+                        duration={1000}
+                        isVisible={true}
+                        type="fadeIn"
+                      >
+                        <div
+                          className="jOKFwR"
+                          type="fadeIn"
+                        >
+                          <Box
+                            pad="large"
+                          >
+                            <styled.div
+                              pad="large"
+                            >
+                              <div
+                                className="bWdHyO"
+                              >
+                                <styled.div>
+                                  <div
+                                    className="innYbI"
+                                  >
+                                    <styled.div>
+                                      <div
+                                        className="kPGFVC"
+                                      >
+                                        <p>
+                                          Astra Finance
+                                        </p>
+                                      </div>
+                                    </styled.div>
+                                    <styled.img
+                                      alt="Astra Finance"
+                                      imageSize="large"
+                                      src="https://github.com/RyanCCollins/cdn/blob/master/astra.jpg?raw=true"
+                                      style={
+                                        Object {
+                                          "maxWidth": 700,
+                                        }
+                                      }
+                                    >
+                                      <img
+                                        alt="Astra Finance"
+                                        className="gcaPMe"
+                                        src="https://github.com/RyanCCollins/cdn/blob/master/astra.jpg?raw=true"
+                                        style={
+                                          Object {
+                                            "maxWidth": 700,
+                                          }
+                                        }
+                                      />
+                                    </styled.img>
+                                  </div>
+                                </styled.div>
+                              </div>
+                            </styled.div>
+                          </Box>
+                        </div>
+                      </styled.div>
+                    </WithAnimation>
+                  </div>
+                </a>
+              </styled.a>
+            </Anchor>
+          </withRouter(Anchor)>
+        </CaseStudy>
+      </div>
+    </styled.div>
+  </Box>
+</CaseStudies>
+`;
+
+exports[`<CaseStudies /> when shallow rendered should create a snapshot 1`] = `
+<Box
+  flexDirection="column"
+  style={
+    Object {
+      "paddingBottom": 100,
+    }
+  }
+>
+  <CaseStudy
+    __typename="Project"
+    id="58f43041f445ed0e26cd46e6"
+    image="https://github.com/RyanCCollins/cdn/blob/master/brand-central/bcmockup.jpg?raw=true"
+    title="HPE Brand Central"
+  />
+  <CaseStudy
+    __typename="Project"
+    id="58f43041f445ed0e26cd46e7"
+    image="https://github.com/RyanCCollins/cdn/blob/master/cms/bccmsmockup.jpg?raw=true"
+    title="Grommet CMS"
+  />
+  <CaseStudy
+    __typename="Project"
+    id="58f43041f445ed0e26cd46e8"
+    image="https://github.com/RyanCCollins/cdn/blob/master/datacenter-care/datacentercaremockup.jpg?raw=true"
+    title="HPE Datacenter Care"
+  />
+  <CaseStudy
+    __typename="Project"
+    id="58f43041f445ed0e26cd46ea"
+    image="https://github.com/RyanCCollins/cdn/blob/master/portfolio-image-gallery-images/mentor-calendar/main-mockup.jpg?raw=true"
+    title="Udacity Mentor Calendar"
+  />
+  <CaseStudy
+    __typename="Project"
+    id="58f43041f445ed0e26cd46e9"
+    image="https://github.com/RyanCCollins/cdn/blob/master/astra.jpg?raw=true"
+    title="Astra Finance"
+  />
+</Box>
+`;
