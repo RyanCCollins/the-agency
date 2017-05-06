@@ -10,7 +10,7 @@ export default function CaseStudies({
   items,
 }: Props): JSX.Element {
   return (
-    <Box flexDirection="column">
+    <Box style={{ paddingBottom: 100 }} flexDirection="column">
       {items.map((item, i) =>
         <CaseStudy key={i} {...item} />,
       )}

@@ -54,7 +54,7 @@ export default class CaseStudy extends React.Component<Props, State> {
                 <Overlay>
                   <p>{title}</p>
                 </Overlay>
-                <Image imageSize="large" src={image} alt={title} />
+                <Image style={{ maxWidth: 700 }} imageSize="large" src={image} alt={title} />
               </Relative>
             </Box>
           </WithAnimation>
