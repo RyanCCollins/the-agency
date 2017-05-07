@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Div component  should create a snapshot 1`] = `
+<main
+  className="giFJIn"
+/>
+`;
