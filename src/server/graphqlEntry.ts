@@ -17,9 +17,7 @@ function createSchema() {
           path.join(__dirname, './graph/schema.json'),
           JSON.stringify(json, null, 2),
           (err) => {
-            if (err) {
-              rej(`Error occured while creating graphql schema. ${err}`);
-            }
+            if (err) { rej(`Error occured while creating graphql schema. ${err}`); }
             res('Schema successfully created');
           },
         );
