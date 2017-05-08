@@ -1,0 +1,660 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContainer  should create a snapshot 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "black1": "#0a0a0a",
+      "black2": "#2d2d2d",
+      "black3": "#555555",
+      "dark1": "#13293D",
+      "dark2": "#006494",
+      "dark3": "#92374D",
+      "error": "#ff324d",
+      "gray1": "#696969",
+      "gray2": "#7c7c7c",
+      "gray3": "#828282",
+      "light1": "#0072BB",
+      "light2": "#ff9800",
+      "light3": "#0C7489",
+      "offwhite": "#f5f5f5",
+      "ok": "#8cc800",
+      "primary": "#03A9F4",
+      "secondary": "#9c27b0",
+      "warning": "#ffd602",
+      "white1": "#fff",
+      "white2": "#f3f3f3",
+      "white3": "#e6e8ec",
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+  >
+    <Connect(_class)>
+      <_class
+        actions={
+          Object {
+            "loadCancel": [Function],
+            "loadFailure": [Function],
+            "loadInitiation": [Function],
+            "loadSuccess": [Function],
+          }
+        }
+        data="foo"
+        error={[Error: Ooops]}
+        isLoading={false}
+      >
+        <Home
+          actions={
+            Object {
+              "loadCancel": [Function],
+              "loadFailure": [Function],
+              "loadInitiation": [Function],
+              "loadSuccess": [Function],
+            }
+          }
+          data="foo"
+          error={[Error: Ooops]}
+          isLoading={false}
+          theme={
+            Object {
+              "black1": "#0a0a0a",
+              "black2": "#2d2d2d",
+              "black3": "#555555",
+              "dark1": "#13293D",
+              "dark2": "#006494",
+              "dark3": "#92374D",
+              "error": "#ff324d",
+              "gray1": "#696969",
+              "gray2": "#7c7c7c",
+              "gray3": "#828282",
+              "light1": "#0072BB",
+              "light2": "#ff9800",
+              "light3": "#0C7489",
+              "offwhite": "#f5f5f5",
+              "ok": "#8cc800",
+              "primary": "#03A9F4",
+              "secondary": "#9c27b0",
+              "warning": "#ffd602",
+              "white1": "#fff",
+              "white2": "#f3f3f3",
+              "white3": "#e6e8ec",
+            }
+          }
+        >
+          <Presentation
+            actions={
+              Object {
+                "loadCancel": [Function],
+                "loadFailure": [Function],
+                "loadInitiation": [Function],
+                "loadSuccess": [Function],
+              }
+            }
+            data="foo"
+            error={[Error: Ooops]}
+            isLoading={false}
+            sections={
+              Array [
+                false,
+                false,
+                false,
+              ]
+            }
+            theme={
+              Object {
+                "black1": "#0a0a0a",
+                "black2": "#2d2d2d",
+                "black3": "#555555",
+                "dark1": "#13293D",
+                "dark2": "#006494",
+                "dark3": "#92374D",
+                "error": "#ff324d",
+                "gray1": "#696969",
+                "gray2": "#7c7c7c",
+                "gray3": "#828282",
+                "light1": "#0072BB",
+                "light2": "#ff9800",
+                "light3": "#0C7489",
+                "offwhite": "#f5f5f5",
+                "ok": "#8cc800",
+                "primary": "#03A9F4",
+                "secondary": "#9c27b0",
+                "warning": "#ffd602",
+                "white1": "#fff",
+                "white2": "#f3f3f3",
+                "white3": "#e6e8ec",
+              }
+            }
+          >
+            <styled.div>
+              <div
+                className="jIwUpA"
+              >
+                <Hero
+                  backgroundColor="#03A9F4"
+                >
+                  <styled.div
+                    backgroundColor="#03A9F4"
+                    full={false}
+                  >
+                    <div
+                      className="vaLLK"
+                    >
+                      <Box
+                        alignItems="center"
+                        justifyContent="center"
+                        style={
+                          Object {
+                            "minHeight": "calc(100vh - 100px)",
+                          }
+                        }
+                      >
+                        <styled.div
+                          alignItems="center"
+                          justifyContent="center"
+                          style={
+                            Object {
+                              "minHeight": "calc(100vh - 100px)",
+                            }
+                          }
+                        >
+                          <div
+                            className="kpbQte"
+                            style={
+                              Object {
+                                "minHeight": "calc(100vh - 100px)",
+                              }
+                            }
+                          >
+                            <styled.img
+                              alt="The Agency"
+                              size={300}
+                              src="https://github.com/RyanCCollins/cdn/blob/master/misc/rocket.png?raw=true"
+                            >
+                              <img
+                                alt="The Agency"
+                                className="ddORmD"
+                                size={300}
+                                src="https://github.com/RyanCCollins/cdn/blob/master/misc/rocket.png?raw=true"
+                              />
+                            </styled.img>
+                            <Headline
+                              color="#fff"
+                              fontSize="medium"
+                              fontWeight={400}
+                              margin="medium"
+                              textAlign="center"
+                            >
+                              <styled.h1
+                                color="#fff"
+                                fontSize="medium"
+                                fontWeight={400}
+                                margin="medium"
+                                textAlign="center"
+                              >
+                                <h1
+                                  className="cSbdEv"
+                                  color="#fff"
+                                  fontSize="medium"
+                                  fontWeight={400}
+                                >
+                                  The Agency
+                                </h1>
+                              </styled.h1>
+                            </Headline>
+                          </div>
+                        </styled.div>
+                      </Box>
+                    </div>
+                  </styled.div>
+                </Hero>
+                <div
+                  id="section-one"
+                >
+                  <Hero
+                    backgroundColor="#9c27b0"
+                  >
+                    <styled.div
+                      backgroundColor="#9c27b0"
+                      full={false}
+                    >
+                      <div
+                        className="iVIiVF"
+                      >
+                        <Box
+                          alignItems="center"
+                          justifyContent="center"
+                          style={
+                            Object {
+                              "minHeight": "calc(100vh - 100px)",
+                            }
+                          }
+                        >
+                          <styled.div
+                            alignItems="center"
+                            justifyContent="center"
+                            style={
+                              Object {
+                                "minHeight": "calc(100vh - 100px)",
+                              }
+                            }
+                          >
+                            <div
+                              className="kpbQte"
+                              style={
+                                Object {
+                                  "minHeight": "calc(100vh - 100px)",
+                                }
+                              }
+                            >
+                              <Box
+                                justifyContent="center"
+                                style={
+                                  Object {
+                                    "maxWidth": 576,
+                                  }
+                                }
+                              >
+                                <styled.div
+                                  justifyContent="center"
+                                  style={
+                                    Object {
+                                      "maxWidth": 576,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="hfaZSB"
+                                    style={
+                                      Object {
+                                        "maxWidth": 576,
+                                      }
+                                    }
+                                  >
+                                    <WithAnimation
+                                      isVisible={false}
+                                      type="fadeInUp"
+                                    >
+                                      <styled.div
+                                        delay={0}
+                                        duration={1000}
+                                        isVisible={false}
+                                        type="fadeInUp"
+                                      >
+                                        <div
+                                          className="eArchH"
+                                          type="fadeInUp"
+                                        >
+                                          <Headline
+                                            color="#fff"
+                                            fontSize="medium"
+                                            fontWeight={400}
+                                            margin="medium"
+                                            textAlign="center"
+                                          >
+                                            <styled.h1
+                                              color="#fff"
+                                              fontSize="medium"
+                                              fontWeight={400}
+                                              margin="medium"
+                                              textAlign="center"
+                                            >
+                                              <h1
+                                                className="cSbdEv"
+                                                color="#fff"
+                                                fontSize="medium"
+                                                fontWeight={400}
+                                              >
+                                                We are a dedicated digital agency
+                                              </h1>
+                                            </styled.h1>
+                                          </Headline>
+                                        </div>
+                                      </styled.div>
+                                    </WithAnimation>
+                                  </div>
+                                </styled.div>
+                              </Box>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </div>
+                    </styled.div>
+                  </Hero>
+                </div>
+                <div
+                  id="section-two"
+                >
+                  <Hero
+                    backgroundColor="#0C7489"
+                  >
+                    <styled.div
+                      backgroundColor="#0C7489"
+                      full={false}
+                    >
+                      <div
+                        className="jCPwXi"
+                      >
+                        <Box
+                          alignItems="center"
+                          justifyContent="center"
+                          style={
+                            Object {
+                              "minHeight": "calc(100vh - 100px)",
+                            }
+                          }
+                        >
+                          <styled.div
+                            alignItems="center"
+                            justifyContent="center"
+                            style={
+                              Object {
+                                "minHeight": "calc(100vh - 100px)",
+                              }
+                            }
+                          >
+                            <div
+                              className="kpbQte"
+                              style={
+                                Object {
+                                  "minHeight": "calc(100vh - 100px)",
+                                }
+                              }
+                            >
+                              <Box
+                                justifyContent="center"
+                                style={
+                                  Object {
+                                    "maxWidth": 576,
+                                  }
+                                }
+                              >
+                                <styled.div
+                                  justifyContent="center"
+                                  style={
+                                    Object {
+                                      "maxWidth": 576,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="hfaZSB"
+                                    style={
+                                      Object {
+                                        "maxWidth": 576,
+                                      }
+                                    }
+                                  >
+                                    <WithAnimation
+                                      isVisible={false}
+                                      type="fadeInUp"
+                                    >
+                                      <styled.div
+                                        delay={0}
+                                        duration={1000}
+                                        isVisible={false}
+                                        type="fadeInUp"
+                                      >
+                                        <div
+                                          className="eArchH"
+                                          type="fadeInUp"
+                                        >
+                                          <Headline
+                                            color="#fff"
+                                            fontSize="medium"
+                                            fontWeight={400}
+                                            margin="medium"
+                                            textAlign="center"
+                                          >
+                                            <styled.h1
+                                              color="#fff"
+                                              fontSize="medium"
+                                              fontWeight={400}
+                                              margin="medium"
+                                              textAlign="center"
+                                            >
+                                              <h1
+                                                className="cSbdEv"
+                                                color="#fff"
+                                                fontSize="medium"
+                                                fontWeight={400}
+                                              >
+                                                We build scalable solutions for the web and mobile platforms
+                                              </h1>
+                                            </styled.h1>
+                                          </Headline>
+                                          <Button
+                                            backgroundColor="transparent"
+                                            borderColor="#fff"
+                                            color="#fefefe"
+                                            fontSize="medium"
+                                            label="See Case Studies"
+                                            path="/case-studies"
+                                          >
+                                            <withRouter(Anchor)
+                                              path="/case-studies"
+                                              plain={true}
+                                            >
+                                              <Anchor
+                                                method="push"
+                                                path="/case-studies"
+                                                plain={true}
+                                              >
+                                                <styled.a
+                                                  onClick={[Function]}
+                                                  plain={true}
+                                                >
+                                                  <a
+                                                    className="ckTJUm"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <styled.button
+                                                      backgroundColor="transparent"
+                                                      borderColor="#fff"
+                                                      color="#fefefe"
+                                                      fontSize="medium"
+                                                    >
+                                                      <button
+                                                        className="llBEdw"
+                                                        color="#fefefe"
+                                                        fontSize="medium"
+                                                      >
+                                                        See Case Studies
+                                                      </button>
+                                                    </styled.button>
+                                                  </a>
+                                                </styled.a>
+                                              </Anchor>
+                                            </withRouter(Anchor)>
+                                          </Button>
+                                        </div>
+                                      </styled.div>
+                                    </WithAnimation>
+                                  </div>
+                                </styled.div>
+                              </Box>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </div>
+                    </styled.div>
+                  </Hero>
+                </div>
+                <div
+                  id="section-three"
+                >
+                  <Hero
+                    backgroundColor="#03A9F4"
+                  >
+                    <styled.div
+                      backgroundColor="#03A9F4"
+                      full={false}
+                    >
+                      <div
+                        className="vaLLK"
+                      >
+                        <Box
+                          alignItems="center"
+                          justifyContent="center"
+                          style={
+                            Object {
+                              "minHeight": "calc(100vh - 100px)",
+                            }
+                          }
+                        >
+                          <styled.div
+                            alignItems="center"
+                            justifyContent="center"
+                            style={
+                              Object {
+                                "minHeight": "calc(100vh - 100px)",
+                              }
+                            }
+                          >
+                            <div
+                              className="kpbQte"
+                              style={
+                                Object {
+                                  "minHeight": "calc(100vh - 100px)",
+                                }
+                              }
+                            >
+                              <Box
+                                justifyContent="center"
+                                style={
+                                  Object {
+                                    "maxWidth": 576,
+                                  }
+                                }
+                              >
+                                <styled.div
+                                  justifyContent="center"
+                                  style={
+                                    Object {
+                                      "maxWidth": 576,
+                                    }
+                                  }
+                                >
+                                  <div
+                                    className="hfaZSB"
+                                    style={
+                                      Object {
+                                        "maxWidth": 576,
+                                      }
+                                    }
+                                  >
+                                    <WithAnimation
+                                      isVisible={false}
+                                      type="fadeInUp"
+                                    >
+                                      <styled.div
+                                        delay={0}
+                                        duration={1000}
+                                        isVisible={false}
+                                        type="fadeInUp"
+                                      >
+                                        <div
+                                          className="eArchH"
+                                          type="fadeInUp"
+                                        >
+                                          <Headline
+                                            color="#fff"
+                                            fontSize="medium"
+                                            fontWeight={400}
+                                            margin="medium"
+                                            textAlign="center"
+                                          >
+                                            <styled.h1
+                                              color="#fff"
+                                              fontSize="medium"
+                                              fontWeight={400}
+                                              margin="medium"
+                                              textAlign="center"
+                                            >
+                                              <h1
+                                                className="cSbdEv"
+                                                color="#fff"
+                                                fontSize="medium"
+                                                fontWeight={400}
+                                              >
+                                                Need our help?
+                                              </h1>
+                                            </styled.h1>
+                                          </Headline>
+                                          <Button
+                                            backgroundColor="transparent"
+                                            borderColor="#fff"
+                                            color="#fefefe"
+                                            fontSize="medium"
+                                            label="Get in Touch"
+                                            path="/contact"
+                                          >
+                                            <withRouter(Anchor)
+                                              path="/contact"
+                                              plain={true}
+                                            >
+                                              <Anchor
+                                                method="push"
+                                                path="/contact"
+                                                plain={true}
+                                              >
+                                                <styled.a
+                                                  onClick={[Function]}
+                                                  plain={true}
+                                                >
+                                                  <a
+                                                    className="ckTJUm"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <styled.button
+                                                      backgroundColor="transparent"
+                                                      borderColor="#fff"
+                                                      color="#fefefe"
+                                                      fontSize="medium"
+                                                    >
+                                                      <button
+                                                        className="llBEdw"
+                                                        color="#fefefe"
+                                                        fontSize="medium"
+                                                      >
+                                                        Get in Touch
+                                                      </button>
+                                                    </styled.button>
+                                                  </a>
+                                                </styled.a>
+                                              </Anchor>
+                                            </withRouter(Anchor)>
+                                          </Button>
+                                        </div>
+                                      </styled.div>
+                                    </WithAnimation>
+                                  </div>
+                                </styled.div>
+                              </Box>
+                            </div>
+                          </styled.div>
+                        </Box>
+                      </div>
+                    </styled.div>
+                  </Hero>
+                </div>
+              </div>
+            </styled.div>
+          </Presentation>
+        </Home>
+      </_class>
+    </Connect(_class)>
+  </Provider>
+</ThemeProvider>
+`;

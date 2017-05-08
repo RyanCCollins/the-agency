@@ -1,11 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout Container  should create a snapshot 1`] = `
-<main
-  className="DvkhP"
-/>
-`;
-
 exports[`Layout Main component  should create a snapshot 1`] = `
 <main
   className="DvkhP"
