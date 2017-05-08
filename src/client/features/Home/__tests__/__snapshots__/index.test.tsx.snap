@@ -1,42 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeContainer  should create a snapshot 1`] = `
-<ThemeProvider
-  theme={
+<Provider
+  store={
     Object {
-      "black1": "#0a0a0a",
-      "black2": "#2d2d2d",
-      "black3": "#555555",
-      "dark1": "#13293D",
-      "dark2": "#006494",
-      "dark3": "#92374D",
-      "error": "#ff324d",
-      "gray1": "#696969",
-      "gray2": "#7c7c7c",
-      "gray3": "#828282",
-      "light1": "#0072BB",
-      "light2": "#ff9800",
-      "light3": "#0C7489",
-      "offwhite": "#f5f5f5",
-      "ok": "#8cc800",
-      "primary": "#03A9F4",
-      "secondary": "#9c27b0",
-      "warning": "#ffd602",
-      "white1": "#fff",
-      "white2": "#f3f3f3",
-      "white3": "#e6e8ec",
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
     }
   }
 >
-  <Provider
-    store={
+  <ThemeProvider
+    theme={
       Object {
-        "clearActions": [Function],
-        "dispatch": [Function],
-        "getActions": [Function],
-        "getState": [Function],
-        "replaceReducer": [Function],
-        "subscribe": [Function],
+        "black1": "#0a0a0a",
+        "black2": "#2d2d2d",
+        "black3": "#555555",
+        "dark1": "#13293D",
+        "dark2": "#006494",
+        "dark3": "#92374D",
+        "error": "#ff324d",
+        "gray1": "#696969",
+        "gray2": "#7c7c7c",
+        "gray3": "#828282",
+        "light1": "#0072BB",
+        "light2": "#ff9800",
+        "light3": "#0C7489",
+        "offwhite": "#f5f5f5",
+        "ok": "#8cc800",
+        "primary": "#03A9F4",
+        "secondary": "#9c27b0",
+        "warning": "#ffd602",
+        "white1": "#fff",
+        "white2": "#f3f3f3",
+        "white3": "#e6e8ec",
       }
     }
   >
@@ -655,6 +655,6 @@ exports[`HomeContainer  should create a snapshot 1`] = `
         </Home>
       </_class>
     </Connect(_class)>
-  </Provider>
-</ThemeProvider>
+  </ThemeProvider>
+</Provider>
 `;
