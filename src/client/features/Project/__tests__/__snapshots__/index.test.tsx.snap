@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Project /> when shallow rendered should create a snapshot 1`] = `
+<ApolloProvider
+  client={
+    ApolloClient {
+      "addTypename": true,
+      "dataId": undefined,
+      "fieldWithArgs": [Function],
+      "initialState": Object {},
+      "middleware": [Function],
+      "mutate": [Function],
+      "networkInterface": HTTPFetchNetworkInterface {
+        "_afterwares": Array [],
+        "_middlewares": Array [],
+        "_opts": Object {},
+        "_uri": "http://0.0.0.0:1338/api",
+      },
+      "query": [Function],
+      "queryDeduplication": false,
+      "queryManager": QueryManager {
+        "addTypename": true,
+        "deduplicator": Deduplicator {
+          "inFlightRequestPromises": Object {},
+          "networkInterface": HTTPFetchNetworkInterface {
+            "_afterwares": Array [],
+            "_middlewares": Array [],
+            "_opts": Object {},
+            "_uri": "http://0.0.0.0:1338/api",
+          },
+        },
+        "fetchQueryPromises": Object {},
+        "idCounter": 1,
+        "networkInterface": HTTPFetchNetworkInterface {
+          "_afterwares": Array [],
+          "_middlewares": Array [],
+          "_opts": Object {},
+          "_uri": "http://0.0.0.0:1338/api",
+        },
+        "observableQueries": Object {},
+        "pollingTimers": Object {},
+        "queryDeduplication": false,
+        "queryDocuments": Object {},
+        "queryIdsByName": Object {},
+        "queryListeners": Object {},
+        "reducerConfig": Object {
+          "customResolvers": undefined,
+          "dataIdFromObject": undefined,
+        },
+        "reduxRootSelector": [Function],
+        "resultComparator": undefined,
+        "resultTransformer": undefined,
+        "scheduler": QueryScheduler {
+          "inFlightQueries": Object {},
+          "intervalQueries": Object {},
+          "pollingTimers": Object {},
+          "queryManager": [Circular],
+          "registeredQueries": Object {},
+        },
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+        },
+      },
+      "reducerConfig": Object {
+        "customResolvers": undefined,
+        "dataIdFromObject": undefined,
+      },
+      "reduxRootKey": "apollo",
+      "reduxRootSelector": null,
+      "resetStore": [Function],
+      "resultComparator": undefined,
+      "resultTransformer": undefined,
+      "setStore": [Function],
+      "shouldForceFetch": false,
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+      },
+      "version": "local",
+      "watchQuery": [Function],
+    }
+  }
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <ThemeProvider
+    theme={
+      Object {
+        "black1": "#0a0a0a",
+        "black2": "#2d2d2d",
+        "black3": "#555555",
+        "dark1": "#13293D",
+        "dark2": "#006494",
+        "dark3": "#92374D",
+        "error": "#ff324d",
+        "gray1": "#696969",
+        "gray2": "#7c7c7c",
+        "gray3": "#828282",
+        "light1": "#0072BB",
+        "light2": "#ff9800",
+        "light3": "#0C7489",
+        "offwhite": "#f5f5f5",
+        "ok": "#8cc800",
+        "primary": "#03A9F4",
+        "secondary": "#9c27b0",
+        "warning": "#ffd602",
+        "white1": "#fff",
+        "white2": "#f3f3f3",
+        "white3": "#e6e8ec",
+      }
+    }
+  >
+    <_class>
+      <Apollo(Project)
+        theme={
+          Object {
+            "black1": "#0a0a0a",
+            "black2": "#2d2d2d",
+            "black3": "#555555",
+            "dark1": "#13293D",
+            "dark2": "#006494",
+            "dark3": "#92374D",
+            "error": "#ff324d",
+            "gray1": "#696969",
+            "gray2": "#7c7c7c",
+            "gray3": "#828282",
+            "light1": "#0072BB",
+            "light2": "#ff9800",
+            "light3": "#0C7489",
+            "offwhite": "#f5f5f5",
+            "ok": "#8cc800",
+            "primary": "#03A9F4",
+            "secondary": "#9c27b0",
+            "warning": "#ffd602",
+            "white1": "#fff",
+            "white2": "#f3f3f3",
+            "white3": "#e6e8ec",
+          }
+        }
+      >
+        <Project
+          theme={
+            Object {
+              "black1": "#0a0a0a",
+              "black2": "#2d2d2d",
+              "black3": "#555555",
+              "dark1": "#13293D",
+              "dark2": "#006494",
+              "dark3": "#92374D",
+              "error": "#ff324d",
+              "gray1": "#696969",
+              "gray2": "#7c7c7c",
+              "gray3": "#828282",
+              "light1": "#0072BB",
+              "light2": "#ff9800",
+              "light3": "#0C7489",
+              "offwhite": "#f5f5f5",
+              "ok": "#8cc800",
+              "primary": "#03A9F4",
+              "secondary": "#9c27b0",
+              "warning": "#ffd602",
+              "white1": "#fff",
+              "white2": "#f3f3f3",
+              "white3": "#e6e8ec",
+            }
+          }
+        >
+          <Presentation
+            theme={
+              Object {
+                "black1": "#0a0a0a",
+                "black2": "#2d2d2d",
+                "black3": "#555555",
+                "dark1": "#13293D",
+                "dark2": "#006494",
+                "dark3": "#92374D",
+                "error": "#ff324d",
+                "gray1": "#696969",
+                "gray2": "#7c7c7c",
+                "gray3": "#828282",
+                "light1": "#0072BB",
+                "light2": "#ff9800",
+                "light3": "#0C7489",
+                "offwhite": "#f5f5f5",
+                "ok": "#8cc800",
+                "primary": "#03A9F4",
+                "secondary": "#9c27b0",
+                "warning": "#ffd602",
+                "white1": "#fff",
+                "white2": "#f3f3f3",
+                "white3": "#e6e8ec",
+              }
+            }
+          >
+            <Box
+              alignItems="center"
+              backgroundColor="#f5f5f5"
+              justifyContent="center"
+              style={
+                Object {
+                  "minHeight": "calc(100vh - 100px)",
+                }
+              }
+            >
+              <styled.div
+                alignItems="center"
+                backgroundColor="#f5f5f5"
+                justifyContent="center"
+                style={
+                  Object {
+                    "minHeight": "calc(100vh - 100px)",
+                  }
+                }
+              >
+                <div
+                  className="jQTesV"
+                  style={
+                    Object {
+                      "minHeight": "calc(100vh - 100px)",
+                    }
+                  }
+                >
+                  <Box
+                    alignItems="center"
+                    pad="large"
+                  >
+                    <styled.div
+                      alignItems="center"
+                      pad="large"
+                    >
+                      <div
+                        className="fDxjjW"
+                      >
+                        <LoadingIndicator
+                          isLoading={true}
+                        >
+                          <Box
+                            alignItems="center"
+                            boxSize={
+                              Object {
+                                "horizontal": "small",
+                              }
+                            }
+                            justifyContent="center"
+                            pad="medium"
+                          >
+                            <styled.div
+                              alignItems="center"
+                              boxSize={
+                                Object {
+                                  "horizontal": "small",
+                                }
+                              }
+                              justifyContent="center"
+                              pad="medium"
+                            >
+                              <div
+                                className="ehCbyN"
+                              >
+                                <styled.svg
+                                  viewBox="0 0 48 48"
+                                >
+                                  <svg
+                                    className="fCfRLW"
+                                    viewBox="0 0 48 48"
+                                  >
+                                    <styled.circle
+                                      cx="24"
+                                      cy="24"
+                                      fill="none"
+                                      r="21"
+                                      stroke="#007acc"
+                                      strokeWidth="6"
+                                    >
+                                      <circle
+                                        className="pAoyR"
+                                        cx="24"
+                                        cy="24"
+                                        fill="none"
+                                        r="21"
+                                        stroke="#007acc"
+                                        strokeWidth="6"
+                                      />
+                                    </styled.circle>
+                                  </svg>
+                                </styled.svg>
+                              </div>
+                            </styled.div>
+                          </Box>
+                        </LoadingIndicator>
+                      </div>
+                    </styled.div>
+                  </Box>
+                </div>
+              </styled.div>
+            </Box>
+          </Presentation>
+        </Project>
+      </Apollo(Project)>
+    </_class>
+  </ThemeProvider>
+</ApolloProvider>
+`;
