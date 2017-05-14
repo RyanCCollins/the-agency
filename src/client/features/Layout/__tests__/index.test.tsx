@@ -1,11 +1,13 @@
 import * as React from 'react';
-import Container from '../';
-import State from '../state';
-import { shallow } from 'enzyme';
-import { shallowToJson } from 'enzyme-to-json';
+import { mount } from 'enzyme';
+import { mountToJson } from 'enzyme-to-json';
 import { Store } from 'redux';
 import { Provider } from 'react-redux';
-import mockStore from 'test/mockstore';
+import { ThemeProvider } from 'styled-components';
+import Container from '../';
+import State from '../state';
+import mockStore from '../../../test/mockstore';
+import theme from '../../../theming';
 
 const testState: State = {
   isMobile: true,
@@ -15,15 +17,17 @@ const testState: State = {
 describe('Layout Container ', () => {
   let store: Store<State>;
   beforeEach(() => {
-    store = mockStore(testState);
+    store = mockStore({ layout: testState });
   });
 
   it('should render with default props', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Provider store={store}>
-        <Container />
+        <ThemeProvider theme={theme}>
+          <Container />
+        </ThemeProvider>
       </Provider>,
     );
-    expect(shallowToJson(wrapper)).toMatchSnapshot();
+    expect(mountToJson(wrapper)).toMatchSnapshot();
   });
 });
