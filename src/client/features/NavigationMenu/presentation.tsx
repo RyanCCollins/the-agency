@@ -2,12 +2,13 @@ import * as React from 'react';
 import { Box, WithAnimation, Heading, Anchor } from 'ui';
 import { Props } from './types';
 import Nav from './nav';
-import Li from './li';
 import Ul from './ul';
+import NavLink from './navLink';
 
 export default function Presentation({
   actions,
   isVisible,
+  navLinks,
   ...props,
 }: Props) {
   return (
@@ -21,29 +22,9 @@ export default function Presentation({
           </WithAnimation>
         </Box>
         <Ul>
-          <Li>
-            <WithAnimation type="fadeInUp" isVisible={isVisible}>
-              <Anchor path="/case-studies" plain>
-                <Heading textAlign="right" tag="h2" color="white">
-                  Case Studies
-                </Heading>
-              </Anchor>
-            </WithAnimation>
-          </Li>
-          <Li>
-            <WithAnimation type="fadeInUp" isVisible={isVisible}>
-              <Heading textAlign="right" tag="h2" color="white">
-                Clients
-              </Heading>
-            </WithAnimation>
-          </Li>
-          <Li>
-            <WithAnimation type="fadeInUp" isVisible={isVisible}>
-              <Heading textAlign="right" tag="h2" color="white">
-                About
-              </Heading>
-            </WithAnimation>
-          </Li>
+          {navLinks.map((link) =>
+            <NavLink {...link} isVisible={isVisible} />,
+          )}
         </Ul>
       </Box>
     </Nav>

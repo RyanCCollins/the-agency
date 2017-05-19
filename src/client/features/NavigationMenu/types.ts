@@ -1,7 +1,7 @@
 import { ActionCreatorsMapObject } from 'redux';
 import { ToggleMenuAction } from './actions';
 
-export { State } from './state';
+export { State, NavLink } from './state';
 export { Props, StateProps, DispatchProps } from './';
 export { ActionType } from './constants';
 export { Action } from './actions';

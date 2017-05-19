@@ -89,6 +89,7 @@
     "markdown-loader": "^2.0.0",
     "mongoose": "^4.8.5",
     "morgan": "^1.8.1",
+    "muicss": "^0.9.16",
     "node-env-file": "^0.1.8",
     "openui": "1.0.1",
     "plop": "^1.7.4",

@@ -5525,6 +5525,10 @@ ms@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
 
+muicss@^0.9.16:
+  version "0.9.16"
+  resolved "https://registry.yarnpkg.com/muicss/-/muicss-0.9.16.tgz#8aa6c527da77b3cf9b7447f1c19b74714c14d175"
+
 multipipe@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/multipipe/-/multipipe-0.1.2.tgz#2a8f2ddf70eed564dff2d57f1e1a137d9f05078b"
