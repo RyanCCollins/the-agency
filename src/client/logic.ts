@@ -1,5 +1,4 @@
 
-const rootLogic = [
-];
+const rootLogic = [];
 
 export default rootLogic;
