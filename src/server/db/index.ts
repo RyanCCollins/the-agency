@@ -93,7 +93,7 @@ function createSeedProjects() {
       Models[key].find().exec((err, docs) => {
         if (docs.length === 0) {
           Models[key].create(
-            seeds[key],
+            seeds[key](),
             (err, data) => {
               if (err) {
                 rej(err);

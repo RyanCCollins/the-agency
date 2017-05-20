@@ -3,9 +3,14 @@ import { withTheme } from 'styled-components';
 import Presentation from './presentation';
 import withGraphql from './withGraphql';
 import { Client } from './types';
+import { ThemeColorMap } from '../../types';
 
 export interface Props {
-  clients: Client[]
+  clients: Client[];
+  loading: boolean;
+  error: string;
+  refetch: () => void;
+  theme: ThemeColorMap;
 }
 
 class Clients extends React.Component<Props, undefined> {

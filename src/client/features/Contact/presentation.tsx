@@ -1,20 +1,23 @@
 import * as React from 'react';
-import { Props } from './types';
+import { Section, Box } from 'ui';
 import Form from 'muicss/lib/react/form';
 import Input from 'muicss/lib/react/input';
 import Textarea from 'muicss/lib/react/textarea';
 import Button from 'muicss/lib/react/button';
+import { Props } from './types';
 
-export default class Presentation extends React.Component<Props, undefined> {
-  public render() {
-    return (
-      <Form>
-        <legend>Title</legend>
-        <Input label="Input 1" floatingLabel={true} />
-        <Input label="Input 2" floatingLabel={true} defaultValue="Value on load" />
-        <Textarea label="Textarea" floatingLabel={true} defaultValue="Value on load" />
-        <Button variant="raised">Submit</Button>
-      </Form>
-    );
-  }
+export default function ContactPresentation(props: Props) {
+  return (
+    <Section alignItems="center" justifyContent="center">
+      <Box boxSize="large"> 
+        <Form style={{ width: '100%' }}>
+          <legend>Contact</legend>
+          <Input label="Name" floatingLabel={true} />
+          <Input label="Email" floatingLabel={true} />
+          <Textarea label="Message" floatingLabel={true} />
+          <Button variant="raised">Submit</Button>
+        </Form>
+      </Box>
+    </Section>
+  );
 }
