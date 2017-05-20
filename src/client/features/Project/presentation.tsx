@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box, Headline, LoadingIndicator, Hero, Article } from 'ui';
+import Hr from 'components/PageIntro/hr';
 import { Props as ParentProps } from './types';
-import Hr from '../Portfolio/hr';
 
 export default function ProjectPresentation({
   theme,

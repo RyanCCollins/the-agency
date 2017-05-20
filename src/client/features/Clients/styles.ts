@@ -1,11 +1,8 @@
-import styled from 'styled-components';
+import { css } from 'styled-components';
 
-export const Section = styled.section`
-  padding: 60px;
-  background-color: #f5f5f5;
-  min-height: calc(100vh - 50px);
-`;
-
-export const Heading = styled.h1`
-  text-align: center;
+export default css`
+  max-width: 50%;
+  @media screen and (max-width: 720px) {
+    max-width: 100%;
+  }
 `;

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Box, Image, Anchor } from 'ui';
+import { Image, Anchor } from 'ui';
+import Box from './clientBox';
 
 export default function Client({
   image,
@@ -7,7 +8,7 @@ export default function Client({
   name,
 }) {
   return (
-    <Box style={{ flexBasis: '33%' }} pad="large" alignItems="center">
+    <Box pad="large" alignItems="center">
       <Anchor href={url} plain>
         <Image alt={`${name} logo`} src={image} imageSize="small" />
       </Anchor>

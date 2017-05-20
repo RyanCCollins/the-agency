@@ -24,6 +24,12 @@ const globalCss = injectGlobal`
     overflow-x: hidden;
   }
 
+  .no-resize {
+    > textarea {
+      resize: none;
+    }
+  }
+
   .markdown-body {
     max-width: 100% !important;
   }

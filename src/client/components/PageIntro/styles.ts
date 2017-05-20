@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { Props } from './hr'; 
+import { Props } from './hr';
 
 export default function styles({ color }: Props) {
   return css`

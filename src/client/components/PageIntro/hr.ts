@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import styles from './styles'; 
+import styles from './styles';
 
 export interface Props {
   color: string;

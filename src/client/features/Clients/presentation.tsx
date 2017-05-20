@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Box, Section, Headline, LoadingIndicator } from 'ui';
+import { Box, Section, LoadingIndicator } from 'ui';
+import { PageIntro } from 'components';
 import { Props as ParentProps } from './types';
-import Hr from '../Portfolio/hr';
 import Client from './client';
 
 export default function ClientsPresentation({
@@ -29,10 +29,7 @@ export default function ClientsPresentation({
   }
   return (
     <Box alignItems="center" backgroundColor={theme.offwhite}>
-      <Section pad="large" alignItems="center">
-        <Headline color="#666" fontWeight={700}>Clients</Headline>
-        <Hr color="#666" />
-      </Section>
+      <PageIntro title="Clients" />
       <Section pad={{ horizontal: 'large' }}>
         <Box
           pad="large"
