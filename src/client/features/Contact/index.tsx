@@ -1,12 +1,10 @@
 import * as React from 'react';
 import Presentation from './presentation';
-export interface Props {
 
-}
-class Contact extends React.Component<Props, undefined> {
+class Contact extends React.Component<undefined, undefined> {
   public render() {
     return (
-      <Presentation {...this.props} />
+      <Presentation />
     );
   }
 }

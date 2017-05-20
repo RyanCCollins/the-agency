@@ -4,9 +4,8 @@ import Form from 'muicss/lib/react/form';
 import Input from 'muicss/lib/react/input';
 import Textarea from 'muicss/lib/react/textarea';
 import Button from 'muicss/lib/react/button';
-import { Props } from './types';
 
-export default function ContactPresentation(props: Props) {
+export default function ContactPresentation() {
   return (
     <Section alignItems="center" justifyContent="center">
       <Box boxSize="large"> 
