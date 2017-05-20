@@ -1,6 +1,27 @@
 import mongoose from 'mongoose';
 import path from 'path';
-import ProjectModel from './models/project';
+import Models from './models';
+
+function seedClients() {
+  return [
+    {
+      name: 'Hewlett Packard Enterprise',
+      image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/hpe.png?raw=true',
+    },
+    {
+      name: 'Grommet',
+      image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/grommet.png?raw=true',
+    },
+    {
+      name: 'Astra Finance',
+      image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/astra-finance.png?raw=true',
+    },
+    {
+      name: 'Udacity Blitz',
+      image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/udacity-blitz.png?raw=true',
+    },
+  ];
+}
 
 function seedProjects() {
   return [
@@ -61,20 +82,27 @@ function seedProjects() {
   ];
 }
 
+const seeds = {
+  ClientModel: seedClients,
+  ProjectModel: seedProjects,
+};
+
 function createSeedProjects() {
   return new Promise((res, rej) => {
-    ProjectModel.find().exec((err, docs) => {
-      if (docs.length === 0) {
-        ProjectModel.create(
-          seedProjects(),
-          (err, data) => {
-            if (err) {
-              rej(err);
-            }
-            res(data);
-          },
-        );
-      }
+    Object.keys(Models).forEach((key) => {
+      Models[key].find().exec((err, docs) => {
+        if (docs.length === 0) {
+          Models[key].create(
+            seeds[key],
+            (err, data) => {
+              if (err) {
+                rej(err);
+              }
+              res(data);
+            },
+          );
+        }
+      });
     });
   });
 }

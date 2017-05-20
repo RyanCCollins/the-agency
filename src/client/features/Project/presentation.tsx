@@ -3,7 +3,7 @@ import { Box, Headline, LoadingIndicator, Hero, Article } from 'ui';
 import { Props as ParentProps } from './types';
 import Hr from '../Portfolio/hr';
 
-export default function Presentation({
+export default function ProjectPresentation({
   theme,
   project,
   loading,
