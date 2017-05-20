@@ -4,6 +4,7 @@ export default gql`
   query Clients {
     clients {
       name
+      url
       image
     }
   }

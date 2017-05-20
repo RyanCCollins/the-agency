@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Headline, LoadingIndicator } from 'ui';
+import { Box, Section, Headline, LoadingIndicator } from 'ui';
 import { Props as ParentProps } from './types';
 import Hr from '../Portfolio/hr';
 import Client from './client';
@@ -29,21 +29,23 @@ export default function ClientsPresentation({
   }
   return (
     <Box alignItems="center" backgroundColor={theme.offwhite}>
-      <Box pad="large" alignItems="center">
+      <Section pad="large" alignItems="center">
         <Headline color="#666" fontWeight={700}>Clients</Headline>
         <Hr color="#666" />
-      </Box>
-      <Box
-        pad="large"
-        justifyContent="center"
-        alignItems="center"
-        flexDirection="row"
-        flexWrap
-      >
-        {clients.map((client, i) =>
-          <Client key={i} {...client} />,
-        )}
-      </Box>
+      </Section>
+      <Section pad={{ horizontal: 'large' }}>
+        <Box
+          pad="large"
+          justifyContent="center"
+          alignItems="center"
+          flexDirection="row"
+          flexWrap
+        >
+          {clients.map((client, i) =>
+            <Client key={i} {...client} />,
+          )}
+        </Box>
+      </Section>
     </Box>
   );
 }
