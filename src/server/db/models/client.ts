@@ -7,6 +7,9 @@ const ClientSchema = new mongoose.Schema({
   image: {
     type: String,
   },
+  url: {
+    type: String,
+  },
 });
 
 export default mongoose.model('Client', ClientSchema);

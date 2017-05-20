@@ -10,5 +10,6 @@ export default new GraphQLObjectType({
     _id: { type: GraphQLID },
     name: { type: GraphQLString },
     image: { type: GraphQLString },
+    url: { type: GraphQLString },
   }),
 });

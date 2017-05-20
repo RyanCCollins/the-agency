@@ -7,18 +7,22 @@ function seedClients() {
     {
       name: 'Hewlett Packard Enterprise',
       image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/hpe.png?raw=true',
+      url: 'https://www.hpe.com',
     },
     {
       name: 'Grommet',
       image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/grommet.png?raw=true',
+      url: 'https://grommet.github.io/',
     },
     {
       name: 'Astra Finance',
       image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/astra-finance.png?raw=true',
+      url: 'https://astra.finance/',
     },
     {
       name: 'Udacity Blitz',
       image: 'https://github.com/RyanCCollins/cdn/blob/master/clients/udacity-blitz.png?raw=true',
+      url: 'https://blitz.com/',
     },
   ];
 }

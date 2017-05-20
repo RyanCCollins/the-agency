@@ -6,8 +6,8 @@ export default function Client({
   name,
 }) {
   return (
-    <Box pad="large" alignItems="center">
-      <Image alt={`${name} logo`} src={image} imageSize="xsmall" />
+    <Box style={{ flexBasis: '33%' }} pad="large" alignItems="center">
+      <Image alt={`${name} logo`} src={image} imageSize="small" />
     </Box>
   );
 }
