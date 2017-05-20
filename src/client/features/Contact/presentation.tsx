@@ -8,7 +8,7 @@ import Button from 'muicss/lib/react/button';
 export default function ContactPresentation() {
   return (
     <Section alignItems="center" justifyContent="center">
-      <Box boxSize="large"> 
+      <Box boxSize="large">
         <Form style={{ width: '100%' }}>
           <legend>Contact</legend>
           <Input label="Name" floatingLabel={true} />
