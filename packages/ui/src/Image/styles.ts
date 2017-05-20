@@ -32,9 +32,9 @@ export const imageStyle = ({ imageSize }: Props) => {
     `;
   }
   return css`
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    min-width: ${rem};
+    max-width: ${rem};
     max-height: ${rem};
     display: block;
   `;

@@ -1,19 +1,8 @@
 import * as React from 'react';
-import { Box, Headline, LoadingIndicator, Image, Paragraph } from 'ui';
+import { Box, Headline, LoadingIndicator } from 'ui';
 import { Props as ParentProps } from './types';
 import Hr from '../Portfolio/hr';
-
-function Client({
-  image,
-  name,
-}) {
-  return (
-    <Box pad="large" alignItems="center">
-      <Image alt={`${name} logo`} src={image} imageSize="medium" />
-      <Paragraph color="#666">{name}</Paragraph>
-    </Box>
-  );
-}
+import Client from './client';
 
 export default function ClientsPresentation({
   theme,
@@ -44,9 +33,15 @@ export default function ClientsPresentation({
         <Headline color="#666" fontWeight={700}>Clients</Headline>
         <Hr color="#666" />
       </Box>
-      <Box pad="large" alignItems="center">
-        {clients.map((client) =>
-          <Client {...client} />,
+      <Box
+        pad="large"
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="row"
+        flexWrap
+      >
+        {clients.map((client, i) =>
+          <Client key={i} {...client} />,
         )}
       </Box>
     </Box>

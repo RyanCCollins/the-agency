@@ -9,7 +9,6 @@ export interface Props {
   clients: Client[];
   loading: boolean;
   error: string;
-  refetch: () => void;
   theme: ThemeColorMap;
 }
 
