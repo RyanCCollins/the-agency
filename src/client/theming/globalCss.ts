@@ -33,6 +33,9 @@ const globalCss = injectGlobal`
   .markdown-body {
     max-width: 100% !important;
   }
+  a:focus, a:hover {
+    text-decoration: none;
+  }
 `;
 
 export default globalCss;
