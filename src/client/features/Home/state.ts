@@ -31,7 +31,7 @@ export const initialState: State = {
     },
     {
       text: 'We build scalable solutions for the web and mobile platforms',
-      color: 'primary',
+      color: 'secondary',
       button: {
         path: '/case-studies',
         label: 'See Case Studies',
@@ -40,7 +40,7 @@ export const initialState: State = {
     },
     {
       text: 'Need our help?',
-      color: 'secondary',
+      color: 'primary',
       button: {
         path: '/contact',
         label: 'Get in touch',

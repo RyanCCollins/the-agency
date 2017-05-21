@@ -1,14 +1,14 @@
 import { ThemeColorMap } from './types';
 
 const colorMap: ThemeColorMap = {
-  dark1: '#13293D',
-  dark2: '#006494',
+  dark1: '#577399',
+  dark2: '#495867',
   dark3: '#92374D',
-  light1: '#0072BB',
+  light1: '#BDD5EA',
   light2: '#ff9800',
   light3: '#0C7489',
   primary: '#03A9F4',
-  secondary: '#9c27b0',
+  secondary: '#BF211E',
   ok: '#8cc800',
   warning: '#ffd602',
   error: '#ff324d',
