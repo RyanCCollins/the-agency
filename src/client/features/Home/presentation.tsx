@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Hero, Headline, Image, Box, WithAnimation, Button } from 'ui';
-import { Props as HomeProps } from './types';
+import { Props as HomeProps, Section } from './types';
 import Wrapper from './wrapper';
 
 interface Props extends HomeProps {
-  sections: boolean[];
+  sections: Section[];
 }
 
-export default function Presentation({ sections, theme }: Props) {
+export default function HomePresentation({ sections, theme }: Props) {
   return (
     <Wrapper>
       <Hero backgroundColor={theme.primary}>
@@ -22,57 +22,29 @@ export default function Presentation({ sections, theme }: Props) {
           </Headline>
         </Box>
       </Hero>
-      <div id="section-one">
-        <Hero backgroundColor={theme.secondary}>
-          <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
-            <Box style={{ maxWidth: 576 }} justifyContent="center">
-              <WithAnimation type="fadeInUp" isVisible={sections[0]}>
-                <Headline color={theme.white1}>
-                  We are a dedicated digital agency
-                </Headline>
-              </WithAnimation>
+      {sections.map((section, i) =>
+        <div id={`section${i}`}>
+          <Hero backgroundColor={theme[section.color]}>
+            <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
+              <Box style={{ maxWidth: 576 }} justifyContent="center">
+                <WithAnimation type="fadeInUp" isVisible={section.isVisible}>
+                  <Headline color={theme.white1}>
+                    {section.text}
+                  </Headline>
+                  {section.button &&
+                    <Button
+                      borderColor={theme.white1}
+                      backgroundColor="transparent"
+                      path={section.button.path}
+                      label={section.button.label}
+                    />
+                  }
+                </WithAnimation>
+              </Box>
             </Box>
-          </Box>
-        </Hero>
-      </div>
-      <div id="section-two">
-        <Hero backgroundColor={theme.light3}>
-          <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
-            <Box style={{ maxWidth: 576 }} justifyContent="center">
-              <WithAnimation type="fadeInUp" isVisible={sections[1]}>
-                <Headline color={theme.white1}>
-                  We build scalable solutions for the web and mobile platforms
-                </Headline>
-                <Button
-                  borderColor={theme.white1}
-                  backgroundColor="transparent"
-                  path="/case-studies"
-                  label="See Case Studies"
-                />
-              </WithAnimation>
-            </Box>
-          </Box>
-        </Hero>
-      </div>
-      <div id="section-three">
-        <Hero backgroundColor={theme.primary}>
-          <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
-            <Box style={{ maxWidth: 576 }} justifyContent="center">
-              <WithAnimation type="fadeInUp" isVisible={sections[2]}>
-                <Headline color={theme.white1}>
-                  Need our help?
-                </Headline>
-                <Button
-                  borderColor={theme.white1}
-                  backgroundColor="transparent"
-                  path="/contact"
-                  label="Get in Touch"
-                />
-              </WithAnimation>
-            </Box>
-          </Box>
-        </Hero>
-      </div>
+          </Hero>
+        </div>,
+      )}
     </Wrapper>
   );
 }

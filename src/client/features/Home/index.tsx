@@ -3,10 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { State as GlobalState } from 'root/state';
 import { withTheme } from 'styled-components';
-import { Action, ActionMap, ErrorType } from './types';
+import { Action, ActionMap, ErrorType, Section } from './types';
 import actionCreators from './actionCreators';
 import * as selectors from './selectors';
-import Presentation from './presentation';
+import HomePresentation from './presentation';
+import sectionIsVisible from './sectionIsVisible';
 import { ThemeColorMap } from '../../types';
 
 type MapStateToProps = (state: GlobalState) => StateProps;
@@ -14,6 +15,7 @@ const mapStateToProps: MapStateToProps = (state) => ({
   isLoading: selectors.selectIsLoading(state),
   error: selectors.selectError(state),
   data: selectors.selectData(state),
+  sections: selectors.selectSections(state),
 });
 
 type MapDispatchToProps = (dispatch: Dispatch<Action>) => DispatchProps;
@@ -34,6 +36,7 @@ export interface DispatchProps {
 
 export interface StateProps {
   isLoading: boolean;
+  sections: Section[];
   error?: ErrorType;
   data?: string;
 }
@@ -44,23 +47,10 @@ interface OwnProps {
 
 export type Props = StateProps & DispatchProps & OwnProps;
 
-function sectionIsVisible(id) {
-  const windowHeight = window ? window.innerHeight : 1000;
-  const node = document.getElementById(id);
-  return node.getBoundingClientRect().top < windowHeight / 2;
-}
-
 class Home extends React.Component<Props, State> {
   constructor() {
     super();
     this.handleScroll = this.handleScroll.bind(this);
-    this.state = {
-      sections: [
-        false,
-        false,
-        false,
-      ],
-    };
   }
   public componentDidMount() {
     if (typeof window !== 'undefined') {
@@ -73,18 +63,14 @@ class Home extends React.Component<Props, State> {
     }
   }
   private handleScroll() {
-    this.setState({
-      sections: [
-        sectionIsVisible('section-one'),
-        sectionIsVisible('section-two'),
-        sectionIsVisible('section-three'),
-      ],
+    const { sections } = this.props;
+    sections.forEach((_, i) => {
+      this.props.actions.toggleSection(i, sectionIsVisible(`section${i}`));
     });
   }
   public render() {
     return (
-      <Presentation
-        {...this.state}
+      <HomePresentation
         {...this.props}
       />
     );

@@ -6,7 +6,7 @@ import {
   LoadCancelAction,
 } from './actions';
 
-export { State } from './state';
+export { State, Section } from './state';
 export { Props, StateProps, DispatchProps } from './';
 export { ActionType } from './constants';
 export { Action } from './actions';
@@ -17,4 +17,9 @@ export interface ActionMap extends ActionCreatorsMapObject {
   loadSuccess: (data: string) => LoadSuccessAction;
   loadFailure: (error: ErrorType) => LoadFailureAction;
   loadCancel: () => LoadCancelAction;
+}
+
+export interface SectionPayload {
+  index: number;
+  visible: boolean;
 }

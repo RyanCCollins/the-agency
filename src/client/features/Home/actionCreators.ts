@@ -4,6 +4,7 @@ import {
   LoadSuccessAction,
   LoadFailureAction,
   LoadCancelAction,
+  ToggleSectionAction,
 } from './actions';
 import { ErrorType } from './types';
 
@@ -25,11 +26,20 @@ export const loadCancel = (): LoadCancelAction => ({
   type: T.LOAD_CANCEL,
 });
 
+export const toggleSection = (index: number, visible: boolean): ToggleSectionAction => ({
+  type: T.TOGGLE_SECTION,
+  payload: {
+    index,
+    visible,
+  },
+});
+
 export const actionCreators = {
   loadInitiation,
   loadSuccess,
   loadFailure,
   loadCancel,
+  toggleSection,
 };
 
 export default actionCreators;
