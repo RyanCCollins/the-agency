@@ -31,7 +31,7 @@ export const initialState: State = {
     },
     {
       text: 'We build scalable solutions for the web and mobile platforms',
-      color: 'secondary',
+      color: 'dark1',
       button: {
         path: '/case-studies',
         label: 'See Case Studies',
