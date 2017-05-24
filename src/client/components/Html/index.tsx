@@ -25,6 +25,7 @@ export default function Html({
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Scalable React TypeScript Boilerplate</title>
         <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat|Roboto+Mono" rel="stylesheet" />
+        <link href="//cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
         <link href={`public${cssHash}`} rel="stylesheet" />
         <style dangerouslySetInnerHTML={{ __html: styles }} />
       </head>
