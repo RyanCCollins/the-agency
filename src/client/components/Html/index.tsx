@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { serialize } from 'serialize-javascript';
+import serialize from 'serialize-javascript';
 
 export interface Props {
   content: string;
