@@ -34,11 +34,13 @@ export default class Header extends React.Component<Props, State> {
     }
   }
   private handleScroll() {
-    const header = document.getElementsByTagName('header')[0];
-    const nextState = getNextState(window, header, this.state.headerState);
-    this.setState({
-      headerState: nextState,
-    });
+    if (typeof window !== 'undefined') {
+      const header = document.getElementsByTagName('header')[0];
+      const nextState = getNextState(window, header, this.state.headerState);
+      this.setState({
+        headerState: nextState,
+      });
+    }
   }
   private backgroundColor() {
     const header = document.getElementsByTagName('header')[0];
