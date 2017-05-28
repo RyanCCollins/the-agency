@@ -1,3 +1,3 @@
 export { Props } from './';
 
-export type AnimationType = 'fadeIn' | 'fadeInUp';
+export type AnimationType = 'fadeIn' | 'fadeInUp' | 'fadeUp';

@@ -3,7 +3,7 @@ import { Props } from './types';
 
 function styles(props: Props) {
   const opacity = props.isVisible ? 1.0 : 0.0;
-  const transform = props.isVisible ? 0 : 20;
+  const transform = props.isVisible ? 0 : 100;
   switch (props.type) {
   case 'fadeIn':
     return css`
@@ -15,6 +15,11 @@ function styles(props: Props) {
       transform: translateY(${transform}%);
       will-change: transform, opacity;
     `;
+  case 'fadeUp':
+    return css`
+      transform: translateY(${transform}%);
+      will-change: transform, opacity;
+    `;
   default:
     return '';
   }
@@ -23,7 +28,7 @@ function styles(props: Props) {
 function transition(props: Props) {
   const duration = 600;
   return css`
-    transition: transform ${duration / 2}ms ease, opacity ${duration}ms ease-out;
+    transition: transform ${duration / 2}ms ease-out, opacity ${duration}ms ease-out;
   `;
 }
 
