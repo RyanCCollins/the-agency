@@ -28,12 +28,13 @@ export default function HomePresentation({ sections, theme }: Props) {
             <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
               <Box style={{ maxWidth: 576 }} justifyContent="center">
                 <WithAnimation type="fadeInUp" isVisible={section.isVisible}>
-                  <Headline color={theme.white1}>
+                  <Headline color={section.button ? theme[section.button.color] : theme.white1}>
                     {section.text}
                   </Headline>
                   {section.button &&
                     <Button
-                      borderColor={theme.white1}
+                      color={theme[section.button.color]}
+                      borderColor={theme[section.button.color]}
                       backgroundColor="transparent"
                       path={section.button.path}
                       label={section.button.label}

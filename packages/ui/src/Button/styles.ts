@@ -9,7 +9,6 @@ export default styled.button`
   color: ${(props: Props) => props.color};
   font-size: ${(props: Props) => remStringFromPX(sizeMap[props.fontSize])};
   border: ${(props: Props) => props.borderColor ? `3px solid ${props.borderColor}` : 'none'};
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;

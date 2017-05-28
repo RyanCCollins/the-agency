@@ -3,6 +3,7 @@ import { ErrorType } from './types';
 export interface Button {
   label: string;
   path: string;
+  color: string;
 }
 
 export interface Section {
@@ -33,6 +34,7 @@ export const initialState: State = {
       text: 'We build scalable solutions for the web and mobile platforms',
       color: 'dark1',
       button: {
+        color: 'white1',
         path: '/case-studies',
         label: 'See Case Studies',
       },
@@ -40,8 +42,9 @@ export const initialState: State = {
     },
     {
       text: 'Need our help?',
-      color: 'primary',
+      color: 'light2',
       button: {
+        color: 'black1',
         path: '/contact',
         label: 'Get in touch',
       },
