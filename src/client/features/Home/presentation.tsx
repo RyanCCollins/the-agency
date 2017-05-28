@@ -23,7 +23,7 @@ export default function HomePresentation({ sections, theme }: Props) {
         </Box>
       </Hero>
       {sections.map((section, i) =>
-        <div id={`section${i}`}>
+        <div key={`section${i}`} id={`section${i}`}>
           <Hero backgroundColor={theme[section.color]}>
             <Box alignItems="center" style={{ minHeight: 'calc(100vh - 100px)' }} justifyContent="center">
               <Box style={{ maxWidth: 576 }} justifyContent="center">

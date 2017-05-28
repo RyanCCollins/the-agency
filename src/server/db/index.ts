@@ -1,3 +1,4 @@
+/* tslint:disable */
 import mongoose from 'mongoose';
 import path from 'path';
 import Models from './models';
@@ -51,19 +52,47 @@ function seedProjects() {
     {
       title: 'Astra Finance',
       image: 'https://github.com/RyanCCollins/cdn/blob/master/astra.jpg?raw=true',
-      content: `# About
-        Astra is a game-changing personal finance app that uses cutting-edge machine learning 
-        techniques to bring intelligence to your financial life. As an engineer on the first 
-        release of the debut app, it was my role to build a highly interactive mobile-first user 
-        interface using web technologies, including React and D3.
-        # Milestones
-        - Wrote well-tested code Functional / Statically Typed and Object-Oriented JavaScript.
-        - Integrated the Front End with API microservices, including Machine Learning services.
-        - Built a dynamic mobile-first user interface using accessibility and UX best-practices.
-        - Implemented UX enhancements, including animation, accessibility and design.
-        - Optimized performance at every stage of the development process.
-        - Organized a very large codebase for maximum scalability following the feature-first modularization approach.
-      `,
+      content: `# About 
+
+Astra is a game-changing personal finance app that uses cutting-edge deep learning algorithms to bring intelligence to your financial life. As a core part of the engineering team, we worked tirelessly to make this app truly special.  
+
+## Features
+
+### Intelligent
+Astra is constantly learning from you – we create a customized deep learning model to tailor Astra’s smarts just for you.
+
+### Holistic
+See the big picture by connecting all of your various accounts across multiple institutions all in one place.
+
+### Secure
+Astra is built using state-of-the-art security practices. Your personal data is fully encrypted and securely stored.
+
+### Projections
+See what next month looks like. And sleep better at night knowing how well you’re improving your financial health.
+
+### Trends
+Follow the money – and find out how much you spent on coffee last month (if you’re up for facing the truth).
+
+### Goals
+Whether it’s a rainy day fund or a vacation, set your financial goals and easily plan how you’re going to fund them.
+
+## Tech Stack
+
+### Front End
+Astra provided us with a unique opportunity to stretch the limits of the web platform.  We built this mobile-first app using only web technologies.  ES6 JavaScript, React and D3 were some of the core technologies used.
+
+### Back End
+The back end included a number of different services, all built using Python.  The core server application was built on top of Flask.
+
+### Machine Learning
+The bread and butter of Astra is Deep Learning.  A number of state-of-the-art machine learning techniques were used. You can read about the deep learning technology used in [this medium article](https://medium.com/udacity/launching-astra-fab2b76b6420) posted by Gil Akos, Astra's founder.
+
+## Milestones
+- Utilized the feature-first architecture
+- Built dynamic data visualizations
+- Built a dynamic mobile-first user interface using accessibility and UX best-practices.
+- Optimized performance at every stage of the development process.
+- Wrote well-tested code Functional / Statically Typed and Object-Oriented JavaScript.`,
     },
     {
       title: 'Udacity Mentor Calendar',

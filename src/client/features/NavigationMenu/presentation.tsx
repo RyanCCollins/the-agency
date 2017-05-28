@@ -5,7 +5,7 @@ import Nav from './nav';
 import Ul from './ul';
 import NavLink from './navLink';
 
-export default function Presentation({
+export default function NavigationMenuPresentation({
   actions,
   isVisible,
   navLinks,
@@ -22,8 +22,8 @@ export default function Presentation({
           </WithAnimation>
         </Box>
         <Ul>
-          {navLinks.map((link) =>
-            <NavLink {...link} isVisible={isVisible} />,
+          {navLinks.map((link, i) =>
+            <NavLink {...link} key={`nav-link-${i}`} isVisible={isVisible} />,
           )}
         </Ul>
       </Box>

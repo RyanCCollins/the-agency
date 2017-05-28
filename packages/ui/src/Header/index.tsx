@@ -45,6 +45,7 @@ export default class Header extends React.Component<Props, State> {
   private backgroundColor() {
     if (typeof window !== 'undefined') {
       const header = document.getElementsByTagName('header')[0];
+      if (typeof header === 'undefined') { return null; };
       const isDocked = window.pageYOffset <= header.clientHeight + 100;
       return !isDocked
         ? '#0a0a0a'
