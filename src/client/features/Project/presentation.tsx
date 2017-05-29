@@ -32,7 +32,12 @@ export default function ProjectPresentation({
       <Box pad="large" alignItems="center">
         <Headline color="#666" fontWeight={700}>{project.title}</Headline>
         <Hr color="#666" />
-        <Article pad="large" content={project.content} />
+        <Article
+          backgroundColor="white"
+          style={{ maxWidth: 960 }}
+          pad="large"
+          content={project.content}
+        />
       </Box>
     </Box>
   );
