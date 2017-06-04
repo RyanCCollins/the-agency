@@ -8,7 +8,9 @@ export interface Props {
   vendorHash: string;
   cssHash: string;
   styles: string;
+  title: string;
 }
+
 export default function Html({
   content,
   state,
@@ -16,6 +18,7 @@ export default function Html({
   vendorHash,
   cssHash,
   styles,
+  title = 'The Agency',
 }: Props) {
   return (
     <html lang="en">
@@ -23,7 +26,7 @@ export default function Html({
         <meta charSet="UTF-8" />
         <meta httpEquiv="Content-Language" content="en" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>The Agency</title>
+        <title>{title}</title>
         <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat|Roboto+Mono" rel="stylesheet" />
         <link href="//cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
         <link href={`public${cssHash}`} rel="stylesheet" />
