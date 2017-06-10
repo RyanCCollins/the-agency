@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
+import { withTheme } from 'styled-components';
 import { SetIsMobileAction } from './actions';
 import { State } from '../../state';
 import actionCreators from './actionCreators';
 import { ToggleMenuAction } from '../NavigationMenu/types';
-import { withTheme } from 'styled-components';
 import { selectIsMobile, selectBrand } from './selectors';
 import Presentation from './presentation';
 import { Action } from './actions';
