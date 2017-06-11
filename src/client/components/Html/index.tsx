@@ -8,7 +8,7 @@ export interface Props {
   vendorHash: string;
   cssHash: string;
   styles: string;
-  title: string;
+  title?: string;
 }
 
 export default function Html({
