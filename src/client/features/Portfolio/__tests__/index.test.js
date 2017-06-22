@@ -9,6 +9,7 @@ import client from '../../../apolloClient';
 import store from '../../../store';
 
 describe('<Portfolio />', () => {
+
   describe('when shallow rendered', () => {
     const wrapper = mount(
       <ApolloProvider store={store} client={client}>
