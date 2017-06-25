@@ -1,4 +1,4 @@
-import {DefaultAction} from './actions';
+import { DefaultAction } from './actions';
 import * as types from './constants';
 
 export const defaultAction = (): DefaultAction => ({
