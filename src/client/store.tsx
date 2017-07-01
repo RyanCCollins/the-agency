@@ -3,7 +3,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 import { createLogicMiddleware } from 'redux-logic';
 import { rootReducer} from './reducers';
-import { initialState as defaultInitialState} from './state';
+import { initialState as defaultInitialState } from './state';
 import apolloClient from './apolloClient';
 import rootLogic from './logic';
 import axios from 'axios';
