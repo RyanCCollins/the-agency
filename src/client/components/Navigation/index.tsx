@@ -22,7 +22,13 @@ export default function Navigation({
         justifyContent="space-between"
       >
         <Anchor path="/" plain>
-          <Heading color={theme.light2} style={{ padding: 20 }} margin="none" tag="h3" upcase>
+          <Heading
+            color={theme.light2}
+            style={{ padding: 20, textShadow: '1px 1px #0a0a0a' }}
+            margin="none"
+            tag="h3"
+            upcase
+          >
             {brandText}
           </Heading>
         </Anchor>

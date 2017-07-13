@@ -9,7 +9,7 @@ export interface Props {
 }
 export default function Burger(props: Props): JSX.Element {
   return (
-    <Button {...props}>
+    <Button style={{ backgroundColor: 'black' }} {...props}>
       <Span>
         <SvgIcon viewBox="0 0 24 18" style={{ width: 24, height: 18, fill: props.color }}>
           <rect width="24" height="2" />
