@@ -9,11 +9,16 @@ export default function Presentation({
   children,
   actions,
   brandText,
+  theme,
 }: Props) {
   return (
     <Main>
       <NavigationMenu />
-      <Navigation brandText={brandText} onToggleMenu={actions.toggleMenu} />
+      <Navigation
+        theme={theme}
+        brandText={brandText}
+        onToggleMenu={actions.toggleMenu}
+      />
       <Div>
         {React.cloneElement(children)}
       </Div>
