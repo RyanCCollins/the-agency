@@ -51,7 +51,7 @@ export default class Header extends React.Component<Props, State> {
         ? '#0a0a0a'
         : 'transparent';
     }
-    return '';
+    return 'transparent';
   }
   public render() {
     const {

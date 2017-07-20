@@ -6,7 +6,7 @@ import Textarea from 'muicss/lib/react/textarea';
 import Button from 'muicss/lib/react/button';
 import { PageIntro } from 'components';
 
-export default function ContactPresentation() {
+export default function ContactPresentation(): JSX.Element {
   return (
     <Section alignItems="center" justifyContent="center">
       <PageIntro title="Contact Me" />

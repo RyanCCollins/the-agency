@@ -11,6 +11,7 @@ export interface Props {
   truncate?: boolean;
   upcase?: boolean;
   margin?: Margin;
+  style?: {}
 }
 
 class Heading extends React.Component<Props, undefined> {

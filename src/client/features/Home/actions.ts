@@ -22,7 +22,7 @@ export interface LoadCancelAction extends PayloadAction<undefined> {
 
 export interface ToggleSectionAction extends PayloadAction<SectionPayload> {
   type: T.TOGGLE_SECTION_TYPE;
-  payload: SectionPayload
+  payload: SectionPayload;
 }
 
 export type Action = LoadInitiationAction

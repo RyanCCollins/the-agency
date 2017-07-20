@@ -4,7 +4,7 @@ import Presentation from './presentation';
 import { ThemeColorMap } from '../../types';
 import withGraphql from './withGraphql';
 
-interface State {
+export interface State {
   isMounted: boolean,
 }
 

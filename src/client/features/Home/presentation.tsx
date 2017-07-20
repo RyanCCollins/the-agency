@@ -17,9 +17,6 @@ export default function HomePresentation({ sections, theme }: Props) {
             src="https://github.com/RyanCCollins/cdn/blob/master/misc/rocket.png?raw=true"
             size={300}
           />
-          <Headline color={theme.white1}>
-            The Agency
-          </Headline>
         </Box>
       </Hero>
       {sections.map((section, i) =>

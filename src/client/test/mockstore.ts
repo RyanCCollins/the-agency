@@ -1,4 +1,3 @@
-
 import configureMockStore from 'redux-mock-store';
 import { Middleware } from 'redux';
 import { createLogicMiddleware } from 'redux-logic';
