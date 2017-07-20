@@ -34,7 +34,7 @@ export default function ProjectPresentation({
         <Hr color="#666" />
         <Article
           backgroundColor="white"
-          style={{ maxWidth: 960 }}
+          style={{ width: 960, maxWidth: '85vw' }}
           pad="large"
           content={project.content}
         />
