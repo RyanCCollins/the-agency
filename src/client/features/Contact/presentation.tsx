@@ -12,9 +12,9 @@ export default function ContactPresentation(): JSX.Element {
       <PageIntro title="Contact Me" />
       <Box boxSize="large">
         <Form style={{ width: '100%' }}>
-          <Input label="Name" floatingLabel={true} />
-          <Input label="Email" floatingLabel={true} />
-          <Textarea className="no-resize" label="Message" floatingLabel={true} />
+          <Input label="Name" floatingLabel />
+          <Input label="Email" floatingLabel />
+          <Textarea className="no-resize" label="Message" floatingLabel />
           <Button variant="raised">Submit</Button>
         </Form>
       </Box>
