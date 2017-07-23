@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Header, Box, Heading, Anchor } from 'ui';
+import { Header, Box, Anchor } from 'ui';
 import { Burger } from 'components';
+import { Heading } from './styles';
 import { ThemeColorMap } from '../../types';
 
 export interface Props extends React.HTMLProps<typeof Navigation> {
@@ -24,7 +25,6 @@ export default function Navigation({
         <Anchor path="/" plain>
           <Heading
             color={theme.light2}
-            style={{ padding: 20, textShadow: '1px 1px #0a0a0a' }}
             margin="none"
             tag="h3"
             upcase
