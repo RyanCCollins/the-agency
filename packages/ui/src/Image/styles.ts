@@ -35,6 +35,7 @@ export const imageStyle = ({ imageSize }: Props) => {
     width: 100%;
     height: auto;
     max-width: ${rem};
+    max-height: ${rem};
     display: block;
   `;
 };

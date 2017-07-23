@@ -3,8 +3,8 @@ import { Margin, Props } from './types';
 import calculateSize, { calculateMargin } from './styleUtils';
 
 const defaultProps: Props = {
-  color: '#000000',
-  textAlign: 'left',
+  color: '#fff',
+  textAlign: 'center',
   paragraphSize: 'medium',
   margin: 'medium',
 };
@@ -18,9 +18,6 @@ export function marginCss(margin: Margin) {
 
 export const style = css`
   max-width: 630px;
-  line-height: 1.47384;
-  font-weight: 300;
-  letter-spacing: .018em;
   text-align: ${(props: Props) => props.textAlign || defaultProps.textAlign};
   color: ${(props: Props) => props.color || defaultProps.color};
   ${(props: Props) => marginCss(props.margin || defaultProps.margin)};
