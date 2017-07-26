@@ -6,6 +6,7 @@ import { Project } from 'features/Portfolio/types';
 export interface Props extends React.HTMLProps<typeof CaseStudies> {
   items: Project[];
 }
+                                               
 export default function CaseStudies({
   items,
 }: Props): JSX.Element {
