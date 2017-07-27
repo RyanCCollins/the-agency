@@ -1,6 +1,6 @@
 import gql from 'graphql-tag';
 
-const query = gql`
+export default gql`
   query Clients {
     clients {
       name
@@ -8,6 +8,4 @@ const query = gql`
       image
     }
   }
-`
-
-export default query;
+`;
