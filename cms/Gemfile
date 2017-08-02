@@ -15,6 +15,7 @@ gem 'puma', '~> 3.7'
 gem 'ffaker'
 gem 'graphql'
 gem 'graphiql-rails'
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
