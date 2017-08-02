@@ -2,8 +2,8 @@ import { ParagraphSize, SizeMap, Margin, MarginSizeMap } from './types';
 import remStringFromPX from '../utils';
 
 const sizeMap: SizeMap = {
-  small: 16,
-  medium: 18,
+  small: 14,
+  medium: 16,
   large: 24,
   xlarge: 32,
 };

@@ -1,10 +1,9 @@
 
 # The Agency
 
-![The Agency](https://github.com/RyanCCollins/cdn/blob/master/misc/the-agency.png?raw=true)
+__NOTICE__: This is a work in progress.
 
-## Getting Started
-Don't this is not for you.
+![The Agency](https://github.com/RyanCCollins/cdn/blob/master/misc/the-agency.png?raw=true)
 
 # Documentation
 See [Scalable React TypeScript Boilerplate](https://github.com/scalable-react/scalable-react-typescript-boilerplate)
