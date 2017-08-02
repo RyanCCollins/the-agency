@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { Box, Headline, LoadingIndicator, Hero, Heading, Paragraph, Image } from 'ui';
 import Hr from 'components/PageIntro/hr';
 import { Props as ParentProps } from './types';
@@ -143,7 +143,16 @@ export default function ProjectPresentation({
             World class UX
           </Headline>
           <Paragraph style={{ fontFamily: 'Open Sans, sans-serif' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel posuere neque. Curabitur imperdiet nulla eu odio gravida, in ultrices est pretium. Morbi ullamcorper nibh id leo mattis, vitae scelerisque lorem consectetur. Maecenas pellentesque efficitur eros nec facilisis. Donec fermentum ligula convallis faucibus condimentum. In porttitor augue sed odio efficitur feugiat. Aliquam viverra semper ex at suscipit. Aliquam erat volutpat. Donec sollicitudin dapibus felis, ut ultricies diam sodales in. Suspendisse porta dui enim, faucibus suscipit ante accumsan vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nullam vel posuere neque. Curabitur imperdiet nulla eu 
+            odio gravida, in ultrices est pretium. Morbi ullamcorper 
+            nibh id leo mattis, vitae scelerisque lorem consectetur. 
+            Maecenas pellentesque efficitur eros nec facilisis. Donec 
+            fermentum ligula convallis faucibus condimentum. In porttitor 
+            augue sed odio efficitur feugiat. Aliquam viverra semper ex at 
+            suscipit. Aliquam erat volutpat. Donec sollicitudin dapibus 
+            felis, ut ultricies diam sodales in. Suspendisse porta dui 
+            enim, faucibus suscipit ante accumsan vel.
           </Paragraph>
         </Box>
       </Box>
@@ -179,11 +188,20 @@ export default function ProjectPresentation({
             Design meets Performance
           </Heading>
           <Paragraph style={{ fontFamily: 'Open Sans, sans-serif' }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel posuere neque. Curabitur imperdiet nulla eu odio gravida, in ultrices est pretium. Morbi ullamcorper nibh id leo mattis, vitae scelerisque lorem consectetur. Maecenas pellentesque efficitur eros nec facilisis. Donec fermentum ligula convallis faucibus condimentum. In porttitor augue sed odio efficitur feugiat. Aliquam viverra semper ex at suscipit. Aliquam erat volutpat. Donec sollicitudin dapibus felis, ut ultricies diam sodales in. Suspendisse porta dui enim, faucibus suscipit ante accumsan vel. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Nullam vel posuere neque. Curabitur imperdiet nulla eu 
+            odio gravida, in ultrices est pretium. Morbi ullamcorper 
+            nibh id leo mattis, vitae scelerisque lorem consectetur. 
+            Maecenas pellentesque efficitur eros nec facilisis. Donec 
+            fermentum ligula convallis faucibus condimentum. In porttitor 
+            augue sed odio efficitur feugiat. Aliquam viverra semper ex at 
+            suscipit. Aliquam erat volutpat. Donec sollicitudin dapibus 
+            felis, ut ultricies diam sodales in. Suspendisse porta dui 
+            enim, faucibus suscipit ante accumsan vel.
           </Paragraph>
         </Box>
       </Box>
-     <Box
+      <Box
         style={{ width: '100vw', maxHeight: 800 }}
         backgroundColor="white"
         flexDirection="column"
