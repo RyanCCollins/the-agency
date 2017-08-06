@@ -25,7 +25,7 @@ function createSchema() {
   });
 }
 
-export default function graphqlEntry(app): Promise<express.Application> {
+export default function graphqlEntry(app: express.Application): Promise<express.Application> {
   return new Promise<express.Application>(async (res, rej) => {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
