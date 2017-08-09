@@ -1,8 +1,8 @@
 import configureMockStore from 'redux-mock-store';
 import { Middleware } from 'redux';
 import { createLogicMiddleware } from 'redux-logic';
-import rootLogic from '../logic';
 import axios from 'axios';
+import rootLogic from '../logic';
 
 const dependencies = {
   httpClient: axios,
