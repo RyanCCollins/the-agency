@@ -1,6 +1,9 @@
 const webpack = require('webpack');
 const path = require('path');
+const env = require('node-env-file');
 const ROOT_PATH = path.resolve(__dirname);
+
+env(path.join(__dirname, '.env'));
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -36,5 +39,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(process.env)
+    }),
   ]
 };
