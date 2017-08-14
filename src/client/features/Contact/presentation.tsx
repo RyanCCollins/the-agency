@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Section, Box } from 'ui';
 import { PageIntro } from 'components';
+import { Section, Box } from 'ui';
 import Form from 'muicss/lib/react/form';
 import Input from 'muicss/lib/react/input';
 import Textarea from 'muicss/lib/react/textarea';
