@@ -12,6 +12,6 @@ namespace :graphql do
         )
       )
     end
-    puts "Created #{schema_path}"
+    puts "Created schema"
   end
 end
