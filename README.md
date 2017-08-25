@@ -1,7 +1,7 @@
 
 # The Agency
 
-__NOTICE__: This is a work in progress.
+__NOTICE__: This project is a work in progress.
 
 ![The Agency](https://github.com/RyanCCollins/cdn/blob/master/misc/the-agency.png?raw=true)
 
